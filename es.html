@@ -1,0 +1,327 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" lang="ES">
+
+<!--Animate CSS-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!--Fuente Hubaii-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+
+<!--Fuente JDCode-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+
+<!--Fuente asap-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+
+<!--Hoja de Estilo-->
+<link href="css/style.css" rel="stylesheet">
+</head>
+<header class="animate__animated animate__fadeIn">
+  <nav><img class="navlogo" src="media/IMG-20210122-WA0004.jpg" alt="">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+	  <li><a href="#"><strong>E/S de Datos</strong></a></li>
+      <li><a href="cond.html">Condiciones</a></li>
+      <li><a href="buc.html">Bucles</a></li>
+      <li><a href="men.html">Menus</a></li>
+      <li><a href="arraysmat.html">Arrays y Matrices</a></li>
+      <li><a href="cad.html">Cadenas</a></li>
+      <li><a href="estruct.html">Estruct. de datos</a></li>
+      <li><a href="#">DEV C++</a></li>
+
+    </ul>
+  </nav>
+  <h1 class="mainTitle">Entrada y Salida</h1>
+  <h1 class="mainTitle2">de datos por consola</h1>
+
+</header>
+
+<body class="animate__animated animate__fadeIn">
+<div class="introContent">
+  <p>Muy bien! ahora podemos comenzar a ver temas de programacion como tal. En esta seccion aprenderemos lo que es la <span class="bold">Entrada y Salida de datos o informacion</span> por consola. Esto es sencillo, ya que requiere de muy pocos pasos (lo digo en serio jaja) para realizarla, y que si lo comparamos con otros lenguajes como Java, el proceso resulta mucho mas compacto, Aqui aprenderemos a como leer informacion que el usuario nos digite por el teclado, y asignarla una variable, para posterior mostrarla en Consola. Por lo que vamos a comenzar a programar!</p>
+
+
+</div>
+<div class="prograTitle" >
+  <h1>Declaracion de Variables</h1>
+</div>
+<div class="prograContent">
+  <p> Como ya vimos, una variables es un espacio de memoria reservado dentro de nuestro ordenador, el cual almacena algun tipo de dato o datos. En este caso, te ensenare a como declarar variables en C++ y sus atributos.<br><br>
+  Te explicare linea por linea como se estructura una variable.<br><br>
+	<span class="bold">Linea 1:</span> En la primera declaramos nuestra funcion principal, que explicamos en el tema anterior.<br><br>
+	<span class="bold">Linea 2:</span> Linea en blanco para orden.<br><br>
+	 <span class="bold">Linea 3:</span>Bien, pues aqui es donde se declara la variable, asignando el tipo (int), el nombre(numero) y opcionalmente se podria declarar el valor del mismo.<br><br>
+	 <span class="bold">Linea 4:</span> Linea en blanco para orden.<br><br>
+	 <span class="bold">Linea 5:</span> Aqui asignamos su valor, con el cual decimos que numero ser a igual a 5 + 5, lo que nos da 10.<br><br>
+	 <span class="bold">Linea 6:</span> Linea en blanco para orden.<br><br>
+	 <span class="bold">Linea 7:</span> Return 0 para finalizar el programa, el cual vimos anteriormente.<br><br>
+	 <span class="bold">Linea 8:</span> Linea con el cierre de las llaves declaradas en linea 1.<br><br>
+	</p>
+<div class="code">
+    <pre>
+
+	 <span class="res2">int</span> main (){
+	 
+	 	<span class="res1">int </span>numero = <span class="res4">10</span>;
+	 
+	 	numero = <span class="res4">5 </span>+ <span class="res4">5</span>;
+	 
+	 <span class="res1">return</span> <span class="res4">0</span>;
+	 
+	 }
+	 </pre>
+  </div>
+	
+</div>
+<div class="prograContent">
+	<p>La <span class="bold">sintaxis</span> para declarar una variable en C++ es muy sencilla, la cual es la siguiente: <br><br>
+    <span class="enf">[Tipo de dato] [nombre de la variable] = [valor];</span><br><br>
+	Podemos ver los ejemplos del codigo a la derecha, con los cuales damos ejemplos de como declara diferentes tipos de variables, y como asignarles valor.<br><br>
+	En este caso, el primer ejemplo, declaramos una variable de tipo entera llamada numero, con su respectivo valor. Ahora, con el resto de variables, notamos que no tienen valor asignado aun, pero eso se puede hacer a posterior, como podemos ver, ahora basta solo con poner el nombre de la variable que ya declaramos, y le asignamos el valor que deseemos, siempre y cuando, sea del tipo de dato que declaramos la variable. Analiza el codigo con determinacion.<br><br>
+		
+	Otra cosa que podemos decir, es que cuando asignamos un valor numerico a una variable como puede ser <span class="bold">float, int o double</span>, se ponen sin encapsular, solo asi, el numero como tal.<br><br>
+	Para <span class="bold">caracteres</span>, se encapsula el valor dentro de comillas simples, como las siguientes ' '.<br><br>
+	Para <span class="bold">cadenas de caracteres</span>, es casi lo mismo, pero encapsulado en comillas dobles "".<br><br>
+	Para los <span class="bold">booleanos</span>, igual, solo bastan con poner TRUE o FALSE.<br><br>
+	Recordemos que todo esto de declaracion de variables se hace dentro de la funcion principal. Una ultima cosa que debemos tener en cuenta, es que, tambien podemos declara muchas variables a la vez, solo separando los nombres por comas, como en el ultimo trozo de codigo.
+	
+  </p>
+	<div class="code">
+    <pre>
+
+       <span class="res1">  int </span>     numero       =      25;
+	<span class="res5">//Tipo     nombre    asignar   valor</span>
+	
+	<span class="res1">int </span>numero;
+	<span class="res1">float </span>flotante;
+	<span class="res1">double </span>doble;
+	<span class="res1">char </span>caracter;
+	<span class="res1">string </span>cadena;
+	<span class="res1">bool </span>booleano;
+	
+	<span class="res5">//Asignando valores de cada tipo</span>
+	
+	numero = <span class="res4">25</span>;
+	flotante = <span class="res4">12.5</span>;
+	double = <span class="res4">0.1234</span>;
+	char = <span class="res3">'a'</span>;
+	string = <span class="res3">"Hola"</span>;
+	bool = <span class="res4">true</span>;
+	bool = <span class="res4">false</span>;
+	
+	<span class="res5">//Declara nuchas variables a la vez</span>
+	<span class="res1">int </span>num1, num2, num3, num4;
+	
+	 </pre>
+  </div>
+</div>
+<div class="prograTitle" >
+  <h1>Salida de Texto en Pantalla&nbsp;</h1>
+</div>
+<div class="secondTitle" >
+  <h1>Ejemplo 1&nbsp;</h1>
+</div>
+<div class="prograContent">
+  <p>Para poder imprimir alguna salida de texto en C++, se usa la instruccion <span class="enf">cout</span> junto con <span class="enf">&lt;&lt;</span>, ten en cuenta, que estos dos siempre andan juntos, no les des mucha importancia, solo recuerda lo que dije, <span class="enf">cout</span> y <span class="enf">&lt;&lt;</span> par obtener <span class="enf">cout &lt;&lt;</span>.<br><br>
+	  
+
+
+Ahora veamos un ejemplo:<br><br>
+	  Como puedes ver, <span class="enf">&lt;&lt;</span> sirve como concatenador, ya que primero imprime "Hola mundo" y seguido del mismo " ProgramarGod ", <span class="enf">&lt;&lt;endl</span> es para crear un salto de linea, lo cual no es obligatorio, pero nos sirve para darle orden a nuestro mensaje. 
+	</p>
+  <div class="code">
+    <pre>
+	
+  <span class="res1">#include &lt;iostream.h&gt;</span>
+	 
+  <span class="res1">using namespace</span> std;
+	 
+  <span class="res2">int</span> main () {
+	 
+  <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Hola mundo" </span>&lt;&lt;<span class="res3"> " ProgramarGod "</span> &lt;&lt; endl;
+	 
+  <span class="res1">return</span><span class="res4"> 0</span>;
+  }
+		</pre>
+  </div>
+</div>
+<div class="secondTitle" >	
+  <h1>Ejemplo 2&nbsp;</h1>
+</div>
+<div class="prograContent">
+  <p>Para este segundo ejemplo, creo que ya sabes como crear la estructura de un programa basico, colocando primero que todo las <span class="bold">librerias</span>, luego el <span class="bold">acortador</span>, declarar la <span class="bold">funcion principal</span> y programar dentro de ella.<br><br>
+	  
+Ahora que ya sabes como declarar variables, pues declararemos una variable de tipo entero, con un valor asignado el cual sera 2, y una variable de tipo string, el cual tambien tendra valor, tendra dentro de ella la frase "Ejemplo". Luego de esto, podemos poner nuestro <span class="enf">cout</span> y concatenar cada uno de nuestras variables facil, solo poniendo <span class="enf">&lt;&lt;</span> entre ellas para conectarlas. Y mira que hasta incluso podemos poner cadenas de texto "numero" por el medio solo conectandola de forma que ya vimos, y por ultimo nuestro querido salto de linea. <span class="enf">endl</span>
+  </p>
+  <div class="code">
+    <pre>
+	
+  <span class="res1">#include &lt;iostream.h&gt;</span>
+  <span class="res1">#include "String.h"</span>
+  
+  <span class="res1">using namespace</span> std;
+  
+  <span class="res2">int</span> main () {
+	 
+  <span class="res5">//Imprimiremos este numero en consola</span> 
+  <span class="res2">int</span> num = <span class="res4">2</span>
+  
+  <span class="res5">//Y esta frase tambien</span>
+  string frase = <span class="res3">"Ejemplo"</span>;
+  
+  <span class="res5">//Concatenamos todo lo que queramos</span>
+  
+  <span class="res2">cout </span>&lt;&lt; frase &lt;&lt;<span class="res3"> " numero "</span> &lt;&lt; num &lt;&lt; endl;
+	 
+  <span class="res1">return</span><span class="res4"> 0</span>;
+  }
+  </pre>
+  
+  </div>
+
+</div>
+<div class="prograContent"> <p>
+
+  El diagrama de flujo de <span class="bold">Salida y entrada de datos</span> seria el siguiente:
+</p> <div class="imgProgra"> <img src="media/esdig.png" alt=""> </div></div>
+
+<div class="prograTitle" >
+  <h1>Entrada o lectura de datos</h1>
+</div>
+<div class="secondTitle" >	
+  <h1>Ejemplo 1&nbsp;</h1>
+</div>
+<div class="prograContent">
+  <p>Si antes usabamos <span class="enf">cout</span> para imprimir en consola, ahora usaremos el comando o instruccion <span class="enf">cin</span> para imprimir, y en lugar de usar <span class="enf">&lt;&lt;</span>. Asi como pasaba con el "cout&lt;&lt;" ahora usaremos <span class="enf">&gt;&gt;</span> los juntamos para obtener la instruccion <span class="enf">cin&gt;&gt;</span> quedando de esta forma.<br><br>
+	  
+
+
+Veamos mas ejemplos:<br><br>
+	  Analicemos ahora que para leer, ponemos exactamente lo mismo, en este caso, queremos leer la variable <span class="bold">nombre</span>, unicamente hay que hacer lo inverso, como se observa la sintaxis a la derecha. E imprimimos exactamente igual como vimos anteriormente <span class="enf">cout &lt;&lt; nombre;</span> <br><br>
+	  
+	  Se que ya sabes que hace el programa, pero...de todas maneras explicare de nuevo :D<br><br>
+	  Este es un pequeno sistema de bienvenida, el cual primero pedira un nombre digitado por el usuario, y almacenado en una variable de tipo string. Y luego mostramos un mensaje de bienvenida y concatenamos con el nombre que el usuario ingreso.
+  </p>
+  <div class="code">
+    <pre>
+	
+  <span class="res1">#include &lt;iostream.h&gt;</span>
+	 
+  <span class="res1">using namespace</span> std;
+	 
+  <span class="res2">int</span> main () {
+	 
+  <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Hola! este es mi programa en C++</span>&lt;&lt;endl;
+  <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Por favor ingresa tu nombre!"</span>&lt;&lt;endl;
+  
+  string nombre;<span class="res5"> //Aqui guardaremos el nombre</span>
+  
+  <span class="res2">cin </span>&gt;&gt; nombre;<span class="res5"> //Leemos el nombre</span>
+  
+  <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Hola!"</span> &lt;&lt; nombre &lt;&lt; <span class="res3">"gracias :D"</span>&lt;&lt; endl;
+	 
+  <span class="res1">return</span><span class="res4"> 0</span>;
+  }
+		</pre>
+  </div>
+</div>
+<div class="secondTitle" >	
+  <h1>Ejemplo 1 (mejorado)&nbsp;</h1>
+</div>
+<div class="prograContent">
+  <p>
+	  Bueno, teniamos antes un pequeno problema con nuestra lectura de datos, porque al usar espacios en la entrada, el programa falla de una u otra manera, podrias intentarlo ahora mismo si tienes el codigo a la mano. Y es que podemos leer de otra manera! usando una instruccion que no muchos usan, <span class="bold">getline</span> la cual tiene parentesis, en donde tenemos 2 parametros que llenar, de esta manera <span class="enf">(cin, nombre)</span> que podemos notar, son la instruccion de entrada, y la variable a leer. Queadaria <span class="enf">getline (cin, variable);</span> Veamos como mejora nuestro codigo con esto.<br><br>
+	  
+	  No es algo tan relevante, pero mejorara de gran manera la funcionalidad de nuestro programa.
+  </p>
+  <div class="code">
+    <pre>
+	
+  <span class="res1">#include &lt;iostream.h&gt;</span>
+	 
+  <span class="res1">using namespace</span> std;
+	 
+  <span class="res2">int</span> main () {
+	 
+  <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Hola! este es mi programa en C++</span>&lt;&lt;endl;
+  <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Por favor ingresa tu nombre!"</span>&lt;&lt;endl;
+  
+  string nombre;<span class="res5"> //Aqui guardaremos el nombre</span>
+  
+  <span class="res3">getline </span>(<span class="res3">cin</span>, nombre);
+  
+  <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Hola!"</span> &lt;&lt; nombre &lt;&lt; <span class="res3">"gracias :D"</span>&lt;&lt; endl;
+	 
+  <span class="res1">return</span><span class="res4"> 0</span>;
+  }
+		</pre>
+  </div>
+</div>
+<div class="secondTitle" >	
+  <h1>Ejemplo 2&nbsp;</h1>
+</div>
+<div class="prograContent">
+  <p>
+	  Aqui tenemos un ejemplo sumamente similar, pero solo que con numeros, aca no seria tan necesario poner un <span class="bold">getline</span>, declaramos 2 variables de tipo float o decimal de un digito, y con ellos operamos en la salida a consola, notamos que es super sencillo.
+  </p>
+  <div class="code">
+    <pre>
+	
+  <span class="res1">#include &lt;iostream.h&gt;</span>
+	 
+  <span class="res1">using namespace</span> std;
+	 
+  <span class="res2">int</span> main () {
+	 
+  <span class="res1">float </span> num1, num2;
+  
+  
+  <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Ingrese el primer numero"</span> &lt;&lt;endl;
+  
+  <span class="res2">cin </span>&gt;&gt; num1;
+  
+  <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Ingrese el segundo numero"</span> &lt;&lt;endl;
+  
+  <span class="res2">cin </span>&gt;&gt; num2;
+  
+
+  
+  <span class="res2">cout </span>&lt;&lt; num1 &lt;&lt;<span class="res3">"+"</span>&lt;&lt;num2&lt;&lt;<span class="res3">"="</span>&lt;&lt;num1 + num2&lt;&lt;endl;
+	 
+  <span class="res1">return</span><span class="res4"> 0</span>;
+  }
+		</pre>
+  </div>
+</div>
+<div class="prograTitle" >
+  <h1>Ejercicios Practicos</h1>
+</div>
+<div class="prograContent">
+	<p>
+	<span class="bold">- Escribe un programa que lea la entrada de 3 numeros enteros, luego muestre la suma y multriplicacion de ellos por consola.</span>
+	</p>
+	<p>
+	<span class="bold"> -Escribe un programa que lea la entrada del nombre, estatura(decimal) y edad del usuario y luego los muestre por consola. </span>
+	</p>	
+</div>
+<div class="next"> 
+	<a href="index.html"><button>Anterior</button></a>
+	<a href="cond.html"><button><strong>Siguiente</strong></button>
+  </a> </div>
+</body>
+<footer>
+  <div class="footerBack">
+    <h5><strong>C++ Manual Practico</strong>desarrollado por <strong>AllanDanielLacanVasquez ©</strong>2022</h5>
+  </div>
+</footer>
+</html>

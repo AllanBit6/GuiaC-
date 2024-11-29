@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" lang="ES">
+
+<!--Animate CSS-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!--Fuente Hubaii-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+
+<!--Fuente JDCode-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+
+<!--Fuente asap-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+
+<!--Hoja de Estilo-->
+<link href="css/style.css" rel="stylesheet">
+</head>
+<header class="animate__animated animate__fadeIn">
+  <nav><img class="navlogo" src="media/IMG-20210122-WA0004.jpg" alt="">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+	  <li><a href="es.html">E/S de Datos</a></li>
+	  <li><a href="cond.html">Condiciones</a></li>
+      <li><a href="buc.html">Bucles</a></li>
+	 <li><a href="#"><strong>Menus</strong></a></li>
+      <li><a href="arraysmat.html">Arrays y Matrices</a></li>
+      <li><a href="cad.html">Cadenas</a></li>
+	  <li><a href="estruct.html">Estruct. de datos</a></li>
+      <li><a href="#">DEV C++</a></li>
+    </ul>
+  </nav>
+  <h1 class="mainTitle">Menus </h1>
+  <h1 class="mainTitle2">Estructuras Condicionales </h1>
+
+</header>
+
+<body class="animate__animated animate__fadeIn">
+<div class="introContent">
+  <p>Los menus de casos, o estructuras condicionales, son estructuras que nos permiten definir multiples casos, dependiendo del valor o condicion que debemos darle para elegir que caso ejecutar, incluso, definir que accion ejecutar si ninguna se cumple, puede que sea el tema mas facil de entender, asi que vamos a empezar<br><br>
+	
+  Podemos tener desde el caso 0, hasta donde queramos, y el caso default o por defecto, veamos la sintaxis ahora:<br></p>
+
+</div>
+<div class="prograTitle" >
+  <h1>Switch</h1>
+</div>
+<div class="prograContent">
+  <p> Comenzaremos con la condiconal <span class="bold">If</span> la cual tambien se conoce como estructura selectiva de casos simples, la cual nos posibilita realizar un conjunto de acciones de ser verdadera la condicion que queremos, por ejemplo, que un numero sea mayor a 10, que una variable sea igual a la letra 'a', etc. En otras palabras...nos permite modificar el flujo del programa a nuestro antojo segun se cumplan ciertas condicionaes. A continuacion te presentamos la sintaxis de la condicional if. <br><br>
+	<span class="bold">Linea 1:</span> Aqui va la palabra reservada <span class="enf">switch</span> y dentro de parentesis, este recibe la variable a comparar, abrimos llaves.<br><br>
+	<span class="bold">Linea 2:</span> Aqui ponemos una palabra reservada llamada <span class="enf">case</span> que define un posible caso, el cual sera el caso 1, y seguido, ponemos dos puntos " : "<br><br>
+	 <span class="bold">Linea 3:</span> Aqui viene el bloque de codigo a ejecutarse<br><br>
+	 <span class="bold">Linea 4:</span> Ponemos <span class="enf">break</span> para frenar el caso, y por ultimo un punto y coma, y asi con los casos <span class="bold">2 y 3</span>.<br><br>
+	 <span class="bold">Linea 20:</span> Aqui ponemos <span class="enf">default</span> que sera como un caso normal, y cerramos con su respectivo <span class="enf">break</span>.<br><br>
+	 <span class="bold">Linea 22:</span> Cerramos llaves y con esto tenemos nuestra estructura.<br><br>
+	  
+    Mejor...veamos un ejemplo :D</p>
+<div class="code">
+    <pre>
+	 
+	 <span class="res1">switch </span>(opcion) { <span class="res5">//Es la variable a comparar</span>
+	 
+	 <span class="res1">case</span> 1:
+	 	<span class="res5">//Bloque de instrucciones 1</span>
+	 <span class="res1">break</span>;
+	 
+	 <span class="res1">case</span> 2:
+	 	<span class="res5">//Bloque de instrucciones 2</span>
+	 <span class="res1">break</span>;
+	 
+	 <span class="res1">case</span> 3:
+		 <span class="res5">//Bloque de instrucciones 3</span>
+	 <span class="res1">break</span>; 
+	 <span class="res5">//casos 1, 2 y 3 son los que puede tomar</span>
+	 <span class="res5">/*los break sirven para frenar
+	 cada opcion, de lo contario, se ejecutan
+	 todas*/
+	 </span>
+	 
+	 <span class="res1">default</span>: <span class="res5">//bloque por defecto</span>
+	 <span class="res5">//En caso que no se ejecute ninguna anterior</span>
+	 <span class="res1">break</span>;
+		
+	 }
+	 
+	 <span class="res5">//Resto del codigo</span>
+	 
+	 </pre>
+  </div>
+	
+</div>
+<div class="prograContent"> <p>
+
+	El diagrama de flujo de <span class="bold">Menu Switch</span> seria el siguiente:
+  </p> <div class="imgProgra"> <img src="media/switchdig.png" alt=""> </div></div>
+
+<div class="secondTitle" >
+  <h1>Ejemplo 1&nbsp;</h1>
+</div>
+<div class="prograContent">
+	<p>Podemos hacer un programa, en el que el usuario pueda escoger 3 opciones, y si escoge una opcion que no esta en la lista, que muestre que es una opcion invalida.</p>
+</div>
+<div class="prograContent">
+  <p>Bien, entonces creamos el esqueleto o la base del programa, creamos una variable de tipo enter que llamamos <span class="bold">opcion</span>, luego por medio de un <span class="enf">cout</span> mostramos al usuario un mensaje para elegir la opcion, y luego por medio de un <span class="enf">cin</span> leemos la variable opcion. En el <span class="bold">switch</span> comparamos la variable opcion, y definimos 3 casos con sus respectivos break, y el caso por defecto. En los 3 anteriores, solo imprimiremos un mensaje que muestre la opcion, mientras que en el caso por defecto, ponemos un 
+	  
+  </p>
+  <div class="code">
+    <pre>
+	
+  <span class="res1">#include &lt;iostream.h&gt;</span>
+	 
+  <span class="res1">using namespace</span> std;
+	 
+  <span class="res2">int</span> main () {
+	 
+    <span class="res1">int</span> opcion;
+    <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Elija una opcion (1, 2 o 3)" </span>&lt;&lt; endl;
+    <span class="res2">cin </span>&gt;&gt; opcion;
+	 
+    <span class="res1">switch </span>(opcion) { <span class="res5"></span>
+	 <span class="res1">case</span> 1:
+	 <span class="res2">cout </span>&lt;&lt;<span class="res3"> "Ha elegido opcion 1" </span>&lt;&lt; endl;	
+	 <span class="res1">break</span>;
+
+	 <span class="res1">case</span> 2:
+	 <span class="res2">cout </span>&lt;&lt;<span class="res3"> "Ha elegido opcion 2" </span>&lt;&lt; endl;	
+	 <span class="res1">break</span>;
+
+	 <span class="res1">case</span> 3:
+         <span class="res2">cout </span>&lt;&lt;<span class="res3"> "Ha elegido opcion 3" </span>&lt;&lt; endl;	 
+	 <span class="res1">break</span>; 
+	 
+	 <span class="res1">default</span>:
+	 <span class="res2">cout </span>&lt;&lt;<span class="res3"> "Opcion Invalida!" </span>&lt;&lt; endl;	
+	 <span class="res1">break</span>;
+
+
+	 <span class="res1">return</span><span class="res4"> 0</span>;
+	}
+	 
+  <span class="res1">return</span><span class="res4"> 0</span>;
+  }
+		</pre>
+  </div>
+</div>
+
+<div class="prograTitle" >
+  <h1>Ejercicios Practicos</h1>
+</div>
+<div class="prograContent">
+	<p>
+	<span class="bold"> -Crear un programa que le presente al usuario un menu, donde tenga 3 opciones, 1ra. El cubo de un numero.
+		2da. Pedir el nombre al usuario y luego saludar. 3ra. Salir. Opcional, puede hacer que el programa se repita.</span>
+	</p>	
+</div>
+	
+<div class="next"> 
+	<a href="buc.html"><button>Anterior</button></a>
+	<a href="arraysmat.html"><button><strong>Siguiente</strong></button>
+  </a> </div>
+</body>
+<footer>
+  <div class="footerBack">
+    <h5><strong>C++ Manual Practico</strong>desarrollado por <strong>AllanDanielLacanVasquez ©</strong>2022</h5>
+  </div>
+</footer>
+</html>

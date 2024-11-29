@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" lang="ES">
+
+<!--Animate CSS-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!--Fuente Hubaii-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+
+<!--Fuente JDCode-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+
+<!--Fuente asap-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+
+<!--Hoja de Estilo-->
+<link href="css/style.css" rel="stylesheet">
+</head>
+<header class="animate__animated animate__fadeInLeft">
+  <nav><img class="navlogo" src="media/IMG-20210122-WA0004.jpg" alt="">
+    <ul>
+      <li><a href="index.html"><strong>Inicio</strong></a></li>
+      <li><a href="es.html">E/S de Datos</a></li>
+      <li><a href="cond.html">Condiciones</a></li>
+      <li><a href="buc.html">Bucles</a></li>
+      <li><a href="men.html">Menus</a></li>
+      <li><a href="arraysmat.html">Arrays y Matrices</a></li>
+      <li><a href="cad.html">Cadenas</a></li>
+      <li><a href="estruct.html">Estruct. de datos</a></li>
+      <li><a href="#">DEV C++</a></li>
+    </ul>
+  </nav>
+  <h1 class="mainTitle">Aprende desarrollo en C++</h1>
+  <h1 class="mainTitle2">Manual practico</h1>
+  <div class="imgHeader" ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" alt="" class="animate__animated animate__pulse animate__infinite"></div>
+  <div class="degTitle"></div>
+</header>
+
+<body class="animate__animated animate__fadeIn">
+<div class="introContent">
+  <p>¿Has querido aprender a programar desde 0? ¿Se te hace interesante aprender como funcionan los programas y la logica y trabajo que hay detras? Pues para esto, te traigo un práctico manual básico en forma de página web donde encontrarás: </p>
+  <ul class="introList">
+    <li>Definiciones</li>
+    <li>Ejemplos</li>
+    <li>Ejercicios</li>
+    <li>Tutoriales</li>
+    <li>Codigos</li>
+  </ul>
+  <p>Comenzaremos definiendo primero algunos conceptos básicos sobre programación, la historia, qué es un algoritmo, y luego comenzaremos de lleno con los temas y sintaxis de C++.</p>
+</div>
+<div class="prograTitle" >
+  <h1>¿Qué es la programación?</h1>
+</div>
+<div class="prograContent">
+  <p> La <span class="bold">programación</span> es el proceso utilizado para idear y ordenar las acciones necesarias para realizar un proyecto. Se ouede definir como el proceso de darle instrucciones a la computadora para realizar determinada acción o cumplir un objetivo.
+    
+    En la actualidad, la noción de programación se encuentra muy asociada a la creación de aplicaciones de informática y videojuegos. En este sentido, es el proceso por el cual una persona desarrolla un programa, valiéndose de una herramienta que le permita escribir el código <span class="bold">(el cual puede estar en uno o varios lenguajes, como C++, Java y Python, entre muchos otros)</span> y de otra que sea capaz de “traducirlo” a lo que se conoce como lenguaje de máquina, que puede "comprender" el microprocesador.</p>
+  <div class="imgProgra"> <img src="https://crehana-blog.imgix.net/media/filer_public/c2/5d/c25d7b57-b721-4789-bf29-fea770626a77/pexels-thisisengineering-3861972.jpg?auto=format&q=50" alt=""> </div>
+</div>
+<div class="prograTitle" >
+  <h1>¿Qué es un programa?</h1>
+</div>
+<div class="prograContent">
+  <p> Un <span class="bold">programa</span> es un conjunto de instrucciones ya compiladas que se ejecutan algoritmicamente, los cuales fueron desarrollados dentro de lenguajes y entornos diversos. En este caso en particular, programas en C++, como puede ser todo el paquete de Adobe, Office o videjuegos con Unreal Engine como Geometry Dash o Clash of Clans.
+    
+    En la actualidad, la noción de programación se encuentra muy asociada a la creación de aplicaciones de informática y videojuegos. En este sentido, es el proceso por el cual una persona desarrolla un programa, valiéndose de una herramienta que le permita escribir el código <span class="bold">(el cual puede estar en uno o varios lenguajes, como C++, Java y Python, entre muchos otros)</span> y de otra que sea capaz de “traducirlo” a lo que se conoce como lenguaje de máquina, que puede "comprender" el microprocesador.</p>
+  <div class="imgProgra"> <img src="https://previews.123rf.com/images/scanrail/scanrail1303/scanrail130300024/18457436-movilidad-ordenador-comunicaci%C3%B3n-por-internet-y-la-computaci%C3%B3n-en-nube-laptop-concepto-blanco-con-la-nube-.jpg" alt=""> </div>
+</div>
+<div class="prograTitle">
+  <h1>¿Qué es un Algoritmo?</h1>
+</div>
+<div class="prograContent">
+  <p> En el dia a dia, se emplean <span class="bold">algoritmos</span> frecuentemente para resolver problemas multiples, desde cambiar un foco o preparar café, hasta definir lo que una alarma activará cuando detecte la presencia no deseada de alguien. Algunos ejemplos son los manuales de usuario, que muestran <span class="bold">algoritmos</span> para usar algún dispositivo o producto, o las <span class="bold">instrucciones y ordenes</span> que recibe un trabajador del jefe. Algunos ejemplos en matemática son el algoritmo de multiplicación, para calcular el producto, el algoritmo de la división para calcular el cociente de dos números, el algoritmo de Euclides para obtener el máximo común divisor de dos enteros positivos, o el método de Gauss para resolver un sistema de ecuaciones lineales.
+    
+    En términos de <span class="bold">programación, un algorpitmo</span> es una <span class="bold">secuencia de pasos lógicos</span> que permiten solucionar un problema.<br>
+    <br>
+    Podemos apreciar en la imagen de la derecha, un <span class="bold">Diagrama de Flujo</span> el cual es una forma grafica de representar un algoritmo, de manera rapida y sencilla. Tenemos una serie de pasos para interpretarlo. en el cual apreciamos un problema, el cual es que la lampara no enciende, por lo que procedemos. <br>
+    <br>
+    <span class="bold">*Esta enchufada?:</span> Si no, entonces <span>hay que conectarla</span>...Pero...y si si esta enchufada?<br>
+    <br>
+    <span class="bold">*Esta el foco quemado?:</span> Si lo esta, hay que cambiarle el foco, pero si no. <span class="bold">Comprar una lampara nueva.</span> </p>
+  <div class="imgProgra2"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/LampFlowchart-es.svg/220px-LampFlowchart-es.svg.png" alt="" width="50px" height="30px"> </div>
+</div>
+<div class="prograTitle">
+  <h1>¿Qué es un Lenguaje de Programacion?</h1>
+</div>
+<div class="prograContent">
+  <p> Es un lenguaje formal que, mediante una serie de instrucciones, le permite a un programador escribir un conjunto de órdenes, acciones consecutivas, datos y algoritmos para, de esa forma, crear programas que controlen el comportamiento físico y lógico de una máquina.<br>
+    <br>
+    Mediante este lenguaje se comunican el programador y la máquina, permitiendo especificar, de forma precisa, aspectos varios.<br>
+    <br>
+    Para explicarlo mejor (en otras y con menos palabras), el lenguaje de programación es un sistema estructurado de comunicación, el cual está conformado por conjuntos de símbolos, palabras claves, reglas semánticas y sintácticas que permiten el entendimiento entre un programador y una máquina. </p>
+  <div class="imgProgra"> <img src="https://codigoonclick.com/wp-content/uploads/2018/02/mejores-lenguajes-de-programacion-2018.jpg" alt=""> </div>
+</div>
+<div class="prograTitle">
+  <h1>¿Qué es una variable y una constante?</h1>
+</div>
+<div class="introContent">
+  <p> En programación, una variable está formada por un espacio en el sistema de almacenaje (memoria principal de un ordenador) y un nombre simbólico (un identificador) que está asociado a dicho espacio. Ese espacio contiene una cantidad de información conocida o desconocida, es decir un valor.<br>
+    <br>
+    El nombre de la variable es la forma usual de referirse al valor almacenado: esta separación entre nombre y contenido permite que el nombre sea usado independientemente de la información exacta que representa. Normalmente son tipos de datos<br>
+    <br>
+    En la siguiente tabla, podrás ver los tipos de datos a los que las variables pueden corresponder.
+  <ul class="introList">
+    <li>Int = numeros Enteros (1, 23, 1004, 290, 0)</li>
+    <li>Char = caracteres  (a, A, @, /, -)</li>
+    <li>Float = decimales (0.1, 12.4, 8.5) </li>
+    <li>Double = decimales dobles (16.25, 490.60, 0.76)</li>
+    <li>Bool = booleano ( si o no, TRUE o FALSE, 1 o 0)</li>
+    <li>String = cadenas de caracteres (frases o texto, Manzana, Camino, Caballo)</li>
+  </ul>
+
+  <p>Una constante en C++, es una forma parecida a una variable, pero la diferencia es que las constantes tienen un valor estático que no puede ser modificable durante el programa, sino solo asignable su valor desde que se declara, y puede ser de cualquier tipo, tal y como una variable. </p> 
+</div>
+<div class="prograTitle" >
+  <h1>Historia de C++</h1>
+</div>
+<div class="prograContent">
+  <p>C++ es un lenguaje de programación diseñado en 1979 por Bjarne Stroustrup. La intención de su creación fue extender al lenguaje de programación C mecanismos que permiten la manipulación de objetos. En ese sentido, desde el punto de vista de los lenguajes orientados a objetos, C++ es un lenguaje híbrido. <br>
+    <br>
+    El nombre "C++" fue propuesto por Rick Mascitti en el año 1983, cuando el lenguaje fue utilizado por primera vez fuera de un laboratorio científico. Antes se había usado el nombre "C con clases". En C++, la expresión "C++" significa "incremento de C" y se refiere a que C++ es una extensión de C. </p>
+  <div class="imgProgra"> <img src="https://crehana-blog.imgix.net/media/filer_public/c2/5d/c25d7b57-b721-4789-bf29-fea770626a77/pexels-thisisengineering-3861972.jpg?auto=format&q=50" alt=""> </div>
+</div>
+<div class="prograContent">
+  <p>A continuación, te mostraré una pequeño fragmento de la sintaxis, y codificación en C++, comenzaremos con el clásico 'hola mundo', pero no te preocupes si no le entiendes, ya que conforme avanza el curso, entederás todito lo que se incluye dentro del mismo. <br>
+    <br>
+    Podras notar que dentro del codigo, hay palabras que están marcadas de otro color, como puede ser "printf", "#include" o "using namespace".
+    A estas palabras se les conocen como <span class="bold">Palabras reservadas</span> las cuales son palabras que estan destinadas para realizar las instrucciones correspondientes del lenguaje, en este caso en particular, palabras reservadas del lenguaje C++. Esto quiere decir que no podemos usar dichas palabras para otro uso que no sea para el cual fueron creadas<br>
+    <br>
+    Aquí podemos observar la estructura básica de todo código en C++, si omitimos la linea del "Hola Mundo". </p>
+  <div class="code">
+    <pre>
+		
+	 <span class="res1">#include &lt;iostream.h&gt;</span>
+	 
+	 <span class="res1">using namespace</span> std;
+	 
+	 <span class="res2">int</span> main (<span class="res2">int</span> argv, <span class="res2">char</span>**argc) {
+	 
+	 <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Hola mundo" </span> ;
+	
+	 
+	 <span class="res1">return</span><span class="res4"> 0</span>;
+	 }
+		</pre>
+  </div>
+</div>
+<div class="downCpp">
+  <h1>¡Descarga DEV C++!</h1>
+  <a href="https://www.bloodshed.net/">Haz click aqui!</a>
+  <div class="devImg"><img src="https://sistemasumma.files.wordpress.com/2014/08/dev-c.png" alt="" class="animate__animated animate__bounce animate__infinite"></div>
+</div>
+<div class="introContent">
+  <p>Para comenzar, vamos a requerir instalar DEV C++, el cual es nuestro IDE o Entorno de Desarrollo. Tenemos un link aquí arriba, y dejaremos un video sobre como instalarlo paso a paso.<br>
+    <br>
+    Existen montones de IDEs para programar en C++, como Visual Studio, Visual Studio Code (editor de código), Code Blocks o Zinjal. Pero por cuestiones prácticas y de facilidad, usaremos DEV C++. </p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/LpHluee2xLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+</div>
+<div class="prograTitle" >
+  <h1>Comentarios&nbsp;</h1>
+</div>
+<div class="prograContent">
+  <p>Los comentarios son forma de, como su nombre lo dice, <span class="bold">comentar</span> a lo largo del código, para tener una guía de que es lo que se esta haciendo, estos no son influyentes para el código, ya que son omitidos por el compilador.<br>
+    <br>
+    Hay 2 formas de comentar en C++, una forma para comentar <span class="bold">una sola linea,</span> y otra para comentar <span class="bold">lineas multiples.</span><br>
+    <br>
+    Para una sola linea basta con escribir " //Comentario de una sola linea ".
+    Para una multiples lines se usa " /*Comentario de multiples lineas*/ ".
+    Puedes ver los ejemplos en el bloque de codigo de la derecha. </p>
+  <div class="code">
+    <pre>
+		
+	 <span class="res5">// Comentario de una linea</span>
+	 
+	 <span class="res5">/*
+	 
+	 Comentario de muchas lineas
+	 pueden ser las que sean
+	 
+	 */
+	 </span>
+
+		</pre>
+  </div>
+</div>
+<div class="prograTitle" >
+  <h1>Librerias</h1>
+</div>
+<div class="prograContent">
+  <p>Veremos lo que son las <span class="bold">librerias</span> o <span class="bold">cabeceras</span> en C++, las cuales son conjuntos de instrucciones que nos permiten usarlas dentro de nuestro código, hay tanto librerias nativas, como librerias externas. <br>
+    <br>
+    Para importar librerias nativas, bastara con poner " #include &lt;libreria&gt; ". Algunas librerias nativas que podemos importar, son las primeras 9 que muestro en el código de la derecha.<br>
+    <br>
+    Para importar librerias externas, como la décima que hasta hasta el fondo del codigo, podemos usar " #include "libreriaExt" ". Podemos notar que para liberias internas, se usa "menor que, mayor que", pero en externas, solo se encierra en comillas simples. </p>
+  <div class="code">
+    <pre>
+	
+	 <span class="res5">//Librerias nativas</span> 
+	 
+	 <span class="res1">#include &lt;iostream.h&gt;</span>
+	 <span class="res1">#include &lt;stdio.h&gt;</span>
+	 <span class="res1">#include &lt;stdlib.h&gt;</span>
+	 <span class="res1">#include &lt;cstdlib.h&gt;</span>
+	 <span class="res1">#include &lt;conio.h&gt;</span>
+	 <span class="res1">#include &lt;ctime.h&gt;</span>
+	 <span class="res1">#include &lt;time.h&gt;</span>
+	 <span class="res1">#include &lt;math.h&gt;</span>
+	 <span class="res1">#include &lt;fstream.h&gt;</span>
+	 
+	 <span class="res5">//Librerias externas</span> 
+	 
+	 <span class="res1">#include "rlutil.h"</span>
+	 
+		</pre>
+  </div>
+</div>
+<div class="prograTitle" >
+  <h1>Acortadores&nbsp;</h1>
+</div>
+<div class="prograContent">
+  <p>Es esta parte de código, la cual es " using namespace std; ", sirve para acortar algunas instrucciones, 
+    ya que a veces, algunas, requiren mucho espacio de codigo para hacerlo.<br>
+    <br>
+    Veamos el ejemplo. Ya que cada vez que se usa una instruccion de la libreria estándar empezando con "std: :", entonces se declara usando " using namespace std ". </p>
+  <div class="code">
+    <pre>
+	
+  <span class="res1">using namespace </span> std;
+		</pre>
+  </div>
+  <div class="code">
+    <pre>
+  <span class="res5">//Sin acortador </span>
+   std::<span class="res2">cout</span> &lt;&lt; <span class="res3">"Hola Mundo"</span>;
+	 
+  <span class="res5">//Con acortador </span>
+	 
+  <span class="res1">using namespace </span>std;
+  <span class="res2">cout</span> &lt;&lt; <span class="res3">"Hola Mundo"</span>;
+		</pre>
+  </div>
+</div>
+<div class="prograTitle" >
+  <h1>Funcion principal</h1>
+</div>
+<div class="prograContent">
+  <p>Ahora estudiaremos una de las partes mas importantes de todo el codigo y programacion en C++, la <span class="bold">Funcion Principal</span>, en la cual, van todas las instrucciones que vayamos a usar, a excepción de partes como las librerias, macros, algunas variables, acortadores, y prototipos de función (funciones declaradas también). A continuacion la podras ver en el codigo.<br>
+    <br>
+    <span class="bold">" Int "</span> le indica a la funcion, que necesita encontrar un valor de tipo entero, y dentro de parentesis, van los argumentos de la funcion, se abren y cierran llaves, y dentro de ellas va todo el cuerpo del codigo para nuestro programa.<br>
+    <br>
+    <span class="bold">" return 0; "</span> le devuelve a la funcion, un valor, ya que es de tipo entera, y con ella, cerramos la funcion principal, o cerramos el programa.
+    
+    Como buenas practicas de programadores, podemos encontrar el uso del punto y coma " ; " la cual, si ya lo notaste, está casi que al final de cada instruccion que usamos. A veces, por un punto y coma que no se coloque, el código completa será inútil.<br>
+    <br>
+  </p>
+  <div class="code">
+    <pre>
+
+	 <span class="res2">int</span> main (<span class="res2">int</span> argv, <span class="res2">char</span>**argc) {
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 <span class="res1">return</span><span class="res4"> 0</span>;
+	 }</pre>
+  </div>
+</div>
+<div class="next"> 
+	<a href="index.html"><button>Anterior</button></a>
+	<a href="es.html"><button><strong>Siguiente</strong></button>
+  </a> </div>
+</body>
+<footer>
+  <div class="footerBack">
+    <h5><strong>C++ Manual Practico</strong>desarrollado por <strong>AllanDanielLacanVasquez ©</strong>2022</h5>
+  </div>
+</footer>
+</html>

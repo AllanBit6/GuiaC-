@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" lang="ES">
+
+<!--Animate CSS-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!--Fuente Hubaii-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+
+<!--Fuente JDCode-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+
+<!--Fuente asap-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+
+<!--Hoja de Estilo-->
+<link href="css/style.css" rel="stylesheet">
+</head>
+<header class="animate__animated animate__fadeIn">
+  <nav><img class="navlogo" src="media/IMG-20210122-WA0004.jpg" alt="">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+	  <li><a href="es.html">E/S de Datos</a></li>
+	  <li><a href="#"><strong>Condiciones</strong></a></li>
+      <li><a href="buc.html">Bucles</a></li>
+      <li><a href="men.html">Menus</a></li>
+      <li><a href="arraysmat.html">Arrays y Matrices</a></li>
+      <li><a href="cad.html">Cadenas</a></li>
+	  <li><a href="estruct.html">Estruct. de datos</a></li>
+      <li><a href="#">DEV C++</a></li>
+    </ul>
+  </nav>
+  <h1 class="mainTitle">Condiciones</h1>
+
+</header>
+
+<body class="animate__animated animate__fadeIn">
+<div class="introContent">
+  <p>Las <span class="bold">estructuras de condicion</span> o condicionales en C++, son indispensables a la hora de aprender a a programar en C++ y otros tantos lenguajes de programacion. Nos permiten definir ciertas condiciones logicas dentro de nuestro algoritmo, estos nos ayudan a determinar ciertas acciones o "caminos" que se ejecutaran de ser la condicion cumplida. Por ejemplo, si pudieramos registrar a un usuario dentro de nuestro programa, pero que solo le deje crear una cuenta si el usuario es mayor de 18 años, nos seria de gran ayuda una condicion, que nos permitira verificar si se cumple tal requisito, y si no, llevar a cabo una serie de instrucciones. Estas nos permiten preveer distintos escenarios dentro de la ejecucion de nuestra aplicacion segun creamos de interes.<br><br>
+	
+  Existen varios tipos de condicionales, los cuales tienen diferente funcionalidad y proposito, que nos serviran para distintas ocaciones o escenarios que puedan darse dentro de nuestro algoritmo. Ya cuando los aplicamos, dependera de nosotros saber cual de todas ellas usar para la efecectividad del mismo dentro de nuestro algoritmo. Sin mas que decir, te presento...A las condicionales!<br></p>
+ <ul class="introList">
+    <li>Condicion If</li>
+    <li>Condicion Else If</li>
+    <li>Condicion Else</li>
+	<!--<li>Menu condicional Switch</li>-->
+  </ul>
+
+  <p>Comenzaremos a explicar cada una (y me refiero a cada detalle, y todo lo relacionado jaja) de las estructuras, y como es su sintaxis en C++, al final de la seccion, dejare algunos videos para que puedas aprender con mayor exactitud de que se hablara dentro del curso. Pero antes, quiero enseñarte algo que son los operadores relacionales y logicos. Los cuales son:
+	  
+  <ul class="introList">
+    <li>Igual: ==</li>
+	<li>Diferente: !=</li>
+	<li>Mayor: &gt;</li>
+	<li>Menor: !=</li>
+    <li>Mayor igual: &gt;=</li>
+    <li>Menor igual: &lt;=</li>
+	<!--<li>Menu condicional Switch</li>-->
+  </ul>
+	
+<ul class="introList">
+    <li>Or: &amp;&amp;</li>
+	<li>And: ||</li>
+	<li>Not: !;</li>
+  </ul>
+	
+	</p>
+
+</div>
+
+<div class="prograTitle" >
+  <h1>Condicional If</h1>
+</div>
+<div class="prograContent">
+  <p> Comenzaremos con la condiconal <span class="bold">If</span> la cual tambien se conoce como estructura selectiva de casos simples, la cual nos posibilita realizar un conjunto de acciones de ser verdadera la condicion que queremos, por ejemplo, que un numero sea mayor a 10, que una variable sea igual a la letra 'a', etc. En otras palabras...nos permite modificar el flujo del programa a nuestro antojo segun se cumplan ciertas condicionaes. A continuacion te presentamos la sintaxis de la condicional if. <br><br>
+	<span class="bold">Linea 1:</span> Aqui va la palabra reservada <span class="enf">if</span> y dentro de parentesis, la condicion que queremos verificar, y luego abrimos llaves.<br><br>
+	<span class="bold">Linea 2 a 5:</span> Aqui va todo lo que se ejecutara si se cumple la condicion.<br><br>
+	 <span class="bold">Linea 3:</span> Cerramos llaves de la condicion<br><br>
+	  
+	  Cabe resaltar, que todo esto va dentro de la funcion principal <span class="enf">int main()</span>, con su respectivo <span class="enf">return 0;</span> para cerrar el programa.<br><br>
+    No importa si no entendiste nada de lo que acabas de ver, ya que ahora toca ejemplificar, y con esto, seguro entenderas :)</p>
+<div class="code">
+    <pre>
+	 
+	 <span class="res1">if </span>(condicion){ <span class="res5">//Por ejemplo num &lt;= 1</span>
+	 
+	 <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Se cumple la condicion :D" </span>&lt;&lt; endl;
+		
+	 }
+	 
+	 <span class="res5">//Resto del codigo</span>
+	 
+	 </pre>
+  </div>
+	
+</div>
+<div class="prograContent"> <p>
+
+	El diagrama de flujo de <span class="bold">Condicional If</span> seria el siguiente:
+  </p> <div class="imgProgra"> <img src="media/ifdig.png" alt=""> </div></div>
+
+<div class="secondTitle" >
+  <h1>Ejemplo 1&nbsp;</h1>
+</div>
+<div class="prograContent">
+	<p>Deseamos un programa en el que el usuario debe ingresar por teclado, la respuesta a la suma de 2 numeros, en caso de que se ingrese el resultado correcto, se mostrara un mensaje por consola felicitandolo.</p>
+</div>
+<div class="prograContent">
+  <p>Veamos, primero vamos a crear el esqueleto de nuestro programa, que consiste en las <span class="bold">librerias</span>, <span class="bold">la funcion principal</span> y <span class="bold">return 0</span>. Bien entonces, vamos a declarar una variable que almacene la suma de 30 y 50, que son <span class="bold">enteros</span>, y como son enteros, entonces crearemos una variable <span class="enf">int resultado;</span> que sea entero para almacenarlo. Dentro de la funcion principal, mandamos un mensaje por consola para pedir al usuario que ingrese la respuesta, y por medio de un <span class="enf">cin</span> leer la variable resultado;<br><br>
+  Una vez que el usuario haya ingresado la cantidad, creamos nuestra condicion <span class="enf">if</span>, y la condicion (la que esta entre parentesis) es que: <span class="bold">cuando resultado sea igual igual a la suma de 30 + 20, que haga lo que hay dentro de las llaves de la condicion</span>. Lo cual es que, por medio de un <span class="enf">cout</span> mandar un mensajito de felicitaciones. Y si no se cumple, entonces se omite y termina el programa.
+	  
+  </p>
+  <div class="code">
+    <pre>
+	
+  <span class="res1">#include &lt;iostream.h&gt;</span>
+	 
+  <span class="res1">using namespace</span> std;
+	 
+  <span class="res2">int</span> main () {
+	 
+	<span class="res1">int</span> resultado;
+	<span class="res2">cout </span>&lt;&lt; <span class="res3"> "Cuanto es 30 + 20?" </span>&lt;&lt; endl;
+	<span class="res2">cin </span>&gt;&gt; resultado;
+	 
+  	<span class="res1">if </span>(resultado == <span class="res4">30</span> + <span class="res4">20</span>){
+	 
+	   <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Felicitaciones :D" </span>&lt;&lt; endl;
+	   <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Respuesta correcta!" </span>&lt;&lt; endl;
+		
+	 }
+	 
+  <span class="res1">return</span><span class="res4"> 0</span>;
+  }
+		</pre>
+  </div>
+</div>
+<div class="prograTitle" >
+  <h1>Condicion Else&nbsp;</h1>
+</div>
+<div class="prograContent">
+  <p> Seguiremos con la condicional <span class="bold">Else</span> la cual tambien se conoce como estructura selectiva de casos dobles, ya que nos permite contenmplar que acciones tomar, cuando dada la condicion del if sea falsa, o sea, prevee las dos posibilidades de la condición (Se cumple, o no se cumple), en otras palabras, nos deja modificar el flujo del programa segun se cumpla o no una condicion, tomando acciones en ambos casos. . A continuacion te presentamos la sintaxis de la condicional else if. <br><br>
+	<span class="bold">Linea 1 a 5:</span>Aqui ira todo el bloque de <span class="enf">if</span> que acabamos de ver hace rato.<br><br>
+	<span class="bold">Linea 6 a 9:</span> Empezamos poniendo la palabra reservada <span class="enf">else</span>, y seguido, abrimos las llaves para el bloque de codigo que se ejecuta si no se cumple la condicion, la cual, por cierto, ya no se escribe<br><br>
+	 <span class="bold">Linea 10:</span> Cerramos llaves de la condicion else.<br><br>
+	  
+	  Una cuestion que siempre hay que tomar en cuenta, es que para usar un <span class="bold">else</span> es necesario ponerlo justamente donde terminan las llaves del bloque <span class="bold">if</span> ya que de lo contrario, no funcionara, porque no hay una condicion anterior que verificar.<br><br>
+    Veamos un ejemplo!</p>
+<div class="code">
+    <pre>
+	 
+	 <span class="res1">if </span>(condicion) { <span class="res5">//Por ejemplo num &lt;= 1</span>
+	 
+	 <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Se cumple la condicion :D" </span>&lt;&lt; endl;
+		
+	 }
+	 <span class="res1">else </span>{ <span class="res5">//Si no se cumple</span>
+	 
+	 <span class="res2">cout </span>&lt;&lt; <span class="res3"> "No se cumple la condicion :(" </span>&lt;&lt; endl;
+		
+	 }
+	 
+	 <span class="res5">//Resto del codigo</span>
+	 
+	 </pre>
+  </div>
+</div>
+<div class="prograContent"> <p>
+
+	El diagrama de flujo de <span class="bold">Condicional Else</span> seria el siguiente:
+  </p> <div class="imgProgra"> <img src="media/elsedig.png" alt=""> </div></div>
+<div class="secondTitle" >
+  <h1>Ejemplo 1&nbsp;</h1>
+</div>
+<div class="prograContent">
+	<p>Retomamos el ejemplo anterior. Deseamos un programa en el que el usuario debe ingresar por teclado, la respuesta a la suma de 2 numeros, en caso de que se ingrese el resultado correcto, se mostrara un mensaje por consola felicitandolo. Pero si no se cumple, se muestre un mensaje diciendo que es una respuesta incorrecta.</p>
+</div>
+<div class="prograContent">
+  <p>Como en el ejemplo anterior, dejamos todo tal y como estaba, solo que ahora, agregaremos un bloque de codigo mas luego del <span class="enf">if</span>, el cual sera nuestro caso por si la condicion no se cumple, unicamente mostrando con un cout dentro de <span class="enf">else</span> que la respuesta es incorrecta, y finaliza el programa, pero si se cumpliese, entonces que muestre el mensaje de felicitaciones como lo hicimos anteriormente.
+	  
+  </p>
+  <div class="code">
+    <pre>
+	
+  <span class="res1">#include &lt;iostream.h&gt;</span>
+	 
+  <span class="res1">using namespace</span> std;
+	 
+  <span class="res2">int</span> main () {
+	 
+	<span class="res1">int</span> resultado;
+	<span class="res2">cout </span>&lt;&lt; <span class="res3"> "Cuanto es 30 + 20?" </span>&lt;&lt; endl;
+	<span class="res2">cin </span>&gt;&gt; resultado;
+	 
+  	<span class="res1">if </span>(resultado == <span class="res4">30</span> + <span class="res4">20</span>){
+	 
+	   <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Felicitaciones :D" </span>&lt;&lt; endl;
+	   <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Respuesta correcta!" </span>&lt;&lt; endl;
+		
+	 }
+	 <span class="res1">else </span>{
+	 
+	   <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Respuesta es incorrecta..." </span>&lt;&lt; endl;
+		
+	 }
+	 
+  <span class="res1">return</span><span class="res4"> 0</span>;
+  }
+		</pre>
+  </div>
+</div>
+
+<div class="prograTitle" >
+  <h1>Condicion Else If&nbsp;</h1>
+</div>
+<div class="prograContent">
+  <p> Como ultimo, veremos una condicion, es que como que el <span class="bold">if</span> y el <span class="bold">else</span> tuvieran un hijo, y surgiera el <span class="bold">else if</span>, el cual es una estructura selectiva de casos multiples, ya que nos permite poner otras condiciones, por si acaso, la condicion principal sea falsa, entonces procede a comprobar otras series de condiciones, las cuales pueden ser las que queramos. Podria decirse que el else if, es para tener un camino por si la primera cuestion no se cumple, entonces hacer otra cosa, pero no pasar directo al else, sino comprobar otra condicion antes. A continuacion te presentamos la sintaxis de la condicional else if. <br><br>
+	<span class="bold">Linea 1 a 5:</span> Aqui ira todo el bloque de <span class="enf">if</span> que acabamos de ver hace rato.<br><br>
+	<span class="bold">Linea 6 a 13:</span> Empezamos poniendo las palabras reservadas <span class="enf">else if</span>, y seguido, otra condicion, abrimos las llaves para el bloque de codigo que se ejecuta si no se cumple la primera condicion, pero si la segunda.<br><br>
+	 <span class="bold">Linea 14 a 18:</span> Mismo bloque de <span class="enf">else </span> que hicimos hace rato.<br><br>
+	  
+	  Una cuestion que siempre hay que tomar en cuenta, es que para usar un <span class="bold">else</span> es necesario ponerlo justamente donde terminan las llaves del bloque <span class="bold">if</span> ya que de lo contrario, no funcionara, porque no hay una condicion anterior que verificar.<br><br>
+    Veamos un ejemplo!</p>
+<div class="code">
+    <pre>
+	 
+	 <span class="res1">if </span>(condicion) { <span class="res5">//Por ejemplo num &lt;= 2</span>
+	 
+	 <span class="res2">cout </span>&lt;&lt; <span class="res3">"Se cumple la condicion :D" </span>&lt;&lt; endl;
+		
+	 }
+	 <span class="res1">else if </span>(otra_condicion) { 
+	 <span class="res5">/* No se cumple la  1ra pero si la 2da </span>
+	 <span class="res5">por ejemplo num &gt; 2*/</span>
+	 
+	 <span class="res2">cout </span>&lt;&lt; <span class="res3">"Se cumplio la 2da condicion :o" </span>&lt;&lt; endl;
+		
+	 }
+	 <span class="res1">else </span>{ <span class="res5">//Si no se cumple</span>
+	 
+	 <span class="res2">cout </span>&lt;&lt; <span class="res3">"No se cumple ninguna condicion :(" </span>&lt;&lt; endl;
+		
+	 }
+	 
+	 <span class="res5">//Resto del codigo</span>
+	 
+	 </pre>
+  </div>
+</div>
+<div class="secondTitle" >
+  <h1>Ejemplo 1&nbsp;</h1>
+</div>
+<div class="prograContent">
+	<p>Retomamos el ejemplo anterior. Deseamos un programa en el que el usuario debe ingresar por teclado, la respuesta a la suma de 2 numeros, en caso de que se ingrese el resultado correcto, se mostrara un mensaje por consola felicitandolo. Si no es la respuesta, pero se acerco en un rango de 10 "menor a 10 o mayor a 10" se le dira que es incorrecto, pero estuvo cerca. Pero si no se cumple ninguna, se muestre un mensaje diciendo que es una respuesta incorrecta.</p>
+</div>
+<div class="prograContent">
+  <p>Como en el ejemplo anterior, dejamos todo tal y como estaba con los bloques de <span class="bold">if y else</span> iguales, pero en medio de ambas, pondremos un <span class="enf">else if</span> en el cual, la condicion sera que si es mayor a 40, y menor a 60, que muestre que la respuesta estuvo cerca, pero no es lo correcto. Y asi de simple tenemos 3 situaciones distintas para nuestro programa facilmente.
+	  
+  </p>
+  <div class="code">
+    <pre>
+	
+  <span class="res1">#include &lt;iostream.h&gt;</span>
+	 
+  <span class="res1">using namespace</span> std;
+	 
+  <span class="res2">int</span> main () {
+	 
+	<span class="res1">int</span> resultado;
+	<span class="res2">cout </span>&lt;&lt; <span class="res3"> "Cuanto es 30 + 20?" </span>&lt;&lt; endl;
+	<span class="res2">cin </span>&gt;&gt; resultado;
+	 
+  	<span class="res1">if </span>(resultado == <span class="res4">30</span> + <span class="res4">20</span>){
+	 
+	   <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Felicitaciones :D" </span>&lt;&lt; endl;
+	   <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Respuesta correcta!" </span>&lt;&lt; endl;
+		
+	 }
+	<span class="res1">else if </span>(resultado &gt; <span class="res4">40</span> &amp;&amp; resultado &lt; <span class="res4">60</span>){
+	 
+	   <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Cerca!" </span>&lt;&lt; endl;
+	   <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Pero es incorrecto :(" </span>&lt;&lt; endl;
+		
+	 }
+	 <span class="res1">else </span>{
+	 
+	   <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Respuesta es incorrecta..." </span>&lt;&lt; endl;
+		
+	 }
+	 
+  <span class="res1">return</span><span class="res4"> 0</span>;
+  }
+		</pre>
+  </div>
+</div>
+<div class="prograTitle" >
+  <h1>Ejercicios Practicos</h1>
+</div>
+<div class="prograContent">
+	<p>
+	<span class="bold">- Escribe un programa que lea la entrada de 2 numeros enteros, muestre cual de ellos es el mayor.</span>
+	</p>
+	<p>
+	<span class="bold"> - Escriba un programa que recoja calificaciones de 0 a 100 de 4 unidades, calcule el promedio y en base al mismo desplegar un mensaje que diga 'aprobado', 'no aprobado' y el promedio calculado. </span>
+	</p>	
+</div>
+	
+<div class="next"> 
+	<a href="es.html"><button>Anterior</button></a>
+	<a href="es.html"><button><strong>Siguiente</strong></button>
+  </a> </div>
+</body>
+<footer>
+  <div class="footerBack">
+    <h5><strong>C++ Manual Practico</strong>desarrollado por <strong>AllanDanielLacanVasquez ©</strong>2022</h5>
+  </div>
+</footer>
+</html>

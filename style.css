@@ -1,0 +1,399 @@
+*{
+	
+	margin:0;
+	cursor:default;
+	
+}
+
+header{
+	
+	animation-duration:5s;
+	background-image:url("../media/logo.png");
+	position:relative;
+
+}
+header .degTitle{
+	
+	position:fixed;
+	color:black;
+	background-color:black;
+}
+header nav{
+	
+	
+	background:linear-gradient(45deg,#6A159B,#3279b7,#68c8df);
+	display:flex;
+}
+header nav img{
+	
+	padding:10px;
+	width:90px;
+	height:auto;
+	display:block;
+	margin-left:30px;
+	border-radius: 50%;
+}
+header nav li a {
+	
+	margin-top:35px;
+	transition:0.2s;
+	color:white;
+	display:block;
+	text-decoration: none;
+	padding:5px;
+		
+}
+
+header nav ul{
+	
+	font-family: 'Rajdhani', sans-serif;
+	list-style: none;
+	display:flex;
+}
+header nav li{
+	padding:10px;
+}
+header nav li a:hover{
+	transition:0.2s;
+	color:#3279b7;
+	font-size:20px;
+	border-radius:2px;
+	background-color:white;	
+	font-style:oblique;
+	font-style:italic;
+	cursor:pointer;
+}
+
+header .mainTitle{
+	
+	transition:0.1s;
+	font-family: 'Hubballi', bold;
+	font-size:70px; 
+	text-align:center;
+	
+	background:linear-gradient(45deg,#6A159B,#3279b7,#68c8df);
+	-webkit-text-fill-color:transparent;
+	-webkit-background-clip:text;
+	padding: 10px;
+	
+}
+header .mainTitle2{
+	
+	transition:0.1s;
+	font-family: 'Hubballi', cursive;
+	font-size:40px;
+	text-align:center;
+	background:linear-gradient(45deg,#6A159B,#3279b7,#68c8df);
+	-webkit-text-fill-color:transparent;
+	-webkit-background-clip:text;
+	padding: 10px;
+	
+}
+header .mainTitle:hover, .mainTitle2:hover{
+	
+	font-family: 'Rajdhani', sans-serif;
+	transition:0.1s;
+	font-size:90px;
+	background:#5FC5FF;
+	-webkit-text-fill-color:transparent;
+	-webkit-background-clip:text;
+
+	
+}
+header .imgHeader{
+
+	/*margin-left:545px;*/
+	padding:20px;
+}
+header .imgHeader img{
+	
+	display:block; /*Para centra la imagen*/
+	margin:auto;
+	height:250px;
+	width:auto;
+	animation-duration: 2s; 
+	
+}
+header hr{
+	
+	width: 180px;
+	margin:auto;
+	border-color:#3279b7;
+	
+}
+header hr:hover{
+	
+	width: 220px;
+	margin:auto;
+	border-color:#3279b7;
+	
+}
+footer .footerBack{
+	
+	
+	background:linear-gradient(45deg,#6A159B,#3279b7,#68c8df);
+	display:block;
+	
+}
+footer .footerBack h5{
+	
+	color:white;
+	font-size:15px;
+	text-align:center;
+	font-family: 'Rajdhani', sans-serif;
+	padding:30px;
+	font-style:oblique;
+	font-style:italic;
+}
+body{
+	
+	background-color:white;
+	
+}
+
+body .prograTitle{
+	
+	margin-top:10px;
+	padding-top:30px;
+	
+}
+body .prograTitle h1{
+
+	display:inherit;
+	font-family: 'Rajdhani', sans-serif;
+	font-size:50px;
+	border-color:linear-gradient( #C9F3FD, #3279b7, #C9F3FD);
+	border-style: solid;
+	border-radius: 20px;
+	border-width:3px;
+	padding:10px;
+	margin:10px;
+	text-align:center;
+	color:#3279b7;
+	transition:0.1s;
+	
+}
+body .secondTitle h1{	
+	
+	transition:0.1s;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size:30px; 
+	text-align:center;
+	color:#3279b7;
+	padding: 10px;
+	
+}
+body .prograTitle h1:hover{
+
+	background:linear-gradient(45deg,#6A159B,#3279b7,#68c8df);
+	color:white;
+	transition:0.2s;
+	
+}
+body .prograContent{
+	display:flex;
+	margin:40px;
+}
+
+/*Emular IDE*/
+body .prograContent .code{
+	display:block;
+	background-color:#1A1A1A;
+	margin:40px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size:20px;
+	border-radius:20px;
+	transition:0.2s;
+}
+body .prograContent .code:hover{
+	background-color:#424242;
+	transition:0.2s;
+}
+body .prograContent .code pre{
+	
+	margin-right:50px;
+	color:white;
+}
+
+body .prograContent pre .res1{
+	
+	color:#C02580;
+}
+body .prograContent pre .res2{
+	
+	color:#989F27
+}
+body .prograContent pre .res3{
+	
+	color:#FFBD60;
+}
+body .prograContent pre .res4{
+	
+	color:#CB64FF;
+}
+body .prograContent pre .res5{
+	
+	color:#4E7A54;
+}
+/*Emular IDE*/
+body .prograContent p .bold{
+	color:#5D98CC;
+}
+body .prograContent p .enf{
+	color:white;
+	font-style:oblique;
+	border-radius: 2px;
+	padding-left:7px;
+	padding-right:12px;
+	background:grey;
+}
+body .prograContent p{
+	
+	font-family: 'Asap', sans-serif;
+	padding:40px;
+	font-size:19px;
+	color:#5A5A5A;
+	text-justify: inherit;
+	
+}
+body .introContent .introList{
+	
+	font-family: 'Asap', sans-serif;
+	padding:40px;
+	font-size:20px;
+	display:block;
+	color:#5A5A5A;
+	margin-left:10px;
+	text-justify: inherit;
+	
+}
+body .introContent{
+	
+	border-top:solid;
+	border-top-color:#D5D5D5;
+	display:block;
+	margin:40px;
+}
+body .introContent p{
+	
+	font-family: 'Asap', sans-serif;
+	padding-top:40px;
+	padding-left:40px;
+	padding-right:40px;
+	font-size:19px;
+	color:#5A5A5A;
+	text-justify: inherit;
+	
+}
+body .introContent .introList{
+	
+	font-family: 'Asap', sans-serif;
+	padding:40px;
+	font-size:20px;
+	display:block;
+	color:#5A5A5A;
+	margin-left:10px;
+	text-justify: inherit;
+	
+}
+body .introContent iframe{
+	
+	border-radius: 20px;
+	display:block;
+	margin:auto;
+	padding:20px;
+}
+body .prograContent .imgProgra img{
+	
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:700px ;
+	height:auto ;
+	border-radius:40px;
+}
+body .prograContent .imgProgra2 img{
+	
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:500px ;
+	height:auto ;	
+	border-radius:40px;
+}
+body .downCpp{
+	
+	color:#02FFE9;
+	background:linear-gradient(#04517C,#024A73, #003B5C);
+}
+body .downCpp h1{
+	background-color:#024A73;
+	transition:0.1s;
+	font-family: 'Hubballi', cursive;
+	font-size:30px;
+	text-align:center;
+	color:white;
+	padding: 30px;
+}
+body .downCpp a{
+	background:linear-gradient(#024A73);
+	display:block;
+	margin:auto;
+	font-family: 'Hubballi', cursive;
+	text-align:center;
+	font-size:20px;
+	color:white;
+	padding-top:1px;
+	padding-bottom:10px;
+	cursor:pointer;
+
+}
+body .downCpp .devImg{
+	
+	background:linear-gradient(#024A73, #003B5C);
+	display:block;
+}
+body .downCpp .devImg img{
+	
+	display:flex;
+	width:70px;
+	height:auto;
+	margin:auto;
+	padding:10px;
+	animation-duration: 2s; 
+	
+}
+body .next{
+	display: block;
+	margin:90px;
+	
+
+}
+body .next a button{
+	
+	color:white ;
+	font-family:"Franklin Gothic Bold", "Arial Black", "sans-serif";
+	background-color:#114697;
+	border-style: none;
+	border-radius: 2px;
+	padding:10px;
+	padding-left:20px;
+	padding-right:20px;
+	cursor:pointer;	
+	transition:0.2s;
+	
+}
+body .next a button:hover{
+	
+
+	transition:0.2s;
+	color:#114697;;
+	font-size:20px;
+	border:solid;
+	border-color:#114697;
+	border-radius:10px;
+	background-color:white;	
+	cursor:pointer;
+
+	
+}

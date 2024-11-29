@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" lang="ES">
+
+<!--Animate CSS-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!--Fuente Hubaii-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+
+<!--Fuente JDCode-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+
+<!--Fuente asap-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+
+<!--Hoja de Estilo-->
+<link href="css/style.css" rel="stylesheet">
+</head>
+<header class="animate__animated animate__fadeIn">
+  <nav><img class="navlogo" src="media/IMG-20210122-WA0004.jpg" alt="">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+	  <li><a href="es.html">E/S de Datos</a></li>
+	  <li><a href="cond.html">Condiciones</a></li>
+	  <li><a href="#">Bucles</a></li>
+      <li><a href="men.html">Menus</a></li>
+      <li><a href="arraysmat.html">Arrays y Matrices</a></li>
+	  <li><a href="#"><strong>Cadenas</strong></a></li>
+	  <li><a href="estruct.html">Estruct. de datos</a></li>
+      <li><a href="#">DEV C++</a></li>
+    </ul>
+  </nav>
+  <h1 class="mainTitle">Cadenas</h1>
+  <h1 class="mainTitle2">de caracteres</h1>
+
+</header>
+
+<body class="animate__animated animate__fadeIn">
+<div class="introContent">
+  <p> Ahora que ya sabemos sobre arreglos, (y si no, pues puedes regresar al apartado de arrays) toca aprender sobre lo que serian arreglos de carcteres, o mejor dicho...Cadenas, y algunas de sus funciones que son:
+	  
+  </p>
+ <ul class="introList">
+    <li>Gets</li>
+    <li>Getline</li>
+    <li>Strcpy</li>
+	<li>Strlen</li>
+	<li>Strcat</li>
+	
+  </ul>
+  <p> Antes de iniciar, solo te digo que para esta seccion, incluyas las librerias de string.h  stdio.h  stdlib.h y conio.h para usar las instrucciones que usaremos.
+	  
+  </p>
+</div>
+<div class="prograTitle" >
+  <h1>Gets</h1>
+</div>
+<div class="prograContent">
+  <p>Bueno, vamos a explicar la primera instruccion. No te sucede que al momento de leer una cadena de caracteres con <span class="bold">cin</span>, no te lee los espacios? Pues para eso podemos usar la instruccion <span class="bold">gets</span> la cual nos permitira leer los espacios, veamos como funciona...<br><br>
+	<span class="bold">Linea 1:</span>En la primera linea declaramos una cadena o arreglo de caracterse de dimension 10.<br><br>
+	<span class="bold">Linea 2:</span>Previamente incluida string.h ponemos la palabra reservada <span class="enf">gets</span>, abrimos parentesis, y dentro ponemos la variable que queremos leer.<br><br>
+	<span class="bold">Linea 4:</span>Imprimimos la cadena con "cout".<br><br>
+
+	  
+  Ahora ya podemos leer espacios! pero...tenemos un problemita :( y  es que aunque hayamos declarado una dimension para nuestra cadena, la funcion gets, no va a poner un limite de lectura, y recogera todo lo que ingresemos, pero para eso veremos otras alternativas. No tendremos ejemplo, ya que lo anterior cumplia con la funcion de mostrarnos como funcionaba, ya que basicamente, es solo leer una variable.</p>
+<div class="code">
+    <pre>
+	 
+	<span class="res1">char </span>cadena [<span class="res4">10</span>];
+	cin.getline (cadena, <span class="res4">10</span>);
+	 
+	<span class="res2">cout </span>&lt;&lt; <span class="res3">cadena </span>&lt;&lt; endl;
+	 
+	 </pre>
+  </div>
+	
+</div>
+<div class="prograTitle" >
+  <h1>Getline</h1>
+</div>
+<div class="prograContent">
+  <p> Esta sera una version mejorada de nuestra instruccion anterior <span class="bold">gets</span>, ya que esta si va a respetar la dimension que nuestra variable tenga, ahora vamos a ver como es su sintaxis en C++, que es muy parecida a la anterior:
+  <br><br>
+  
+No tendremos explicacion por linea, ya que solo es de explicar que para el <span class="enf">cin.getline</span> solo hay que agregar la dimension de la cadena junto a ella, separada por una coma, y asi ya leera cadenas con espacios, y aparte, con un limite de caracteres<br><br>
+	  
+	Igual que el anterior, no tendremos ejemplo, pero tendremos un ejercicio relacionado al final.</p>
+<div class="code">
+    <pre>
+	 
+	<span class="res1">char </span>cadena [<span class="res4">10</span>];
+	gets (cadena);
+	 
+	<span class="res2">cout </span>&lt;&lt; <span class="res3">cadena </span>&lt;&lt; endl;
+	 
+		
+	</pre>
+  </div>
+</div>
+
+<div class="prograTitle" >
+  <h1>Strlen</h1>
+</div>
+<div class="prograContent">
+  <p> Esta funcion nos va a servir para contar el numero de una cadena, y lo mejor es que podemos incluso, asignar esta funcion, a alguna variable de tipo entero para que tengamos el numero o longitud de la cadena siempre disponible, veamos como funciona<br><br><br>
+	  Para esto solo vamos a imprimir la funcion. Ponemos palabra reservada <span class="enf">strlen</span> abrimos parentesis, y en los parametros, vamos a poner la variable que que queremos contar, si lo ejecutas, y escribes "Hola" tendria que imprimir de vuelta, un <span class="bold">4</span>, ya que esta cadena solo tiene 4, pero ten en cuenta, que tambien cuenta los espacios.<br><br>
+	  Para asignar la funcion a una variable, solo hace falta asignar la variable e igualarla a la funcion con su respectivo parametro, y con eso ya podemos usarla.
+  </p>
+<div class="code">
+    <pre>
+	
+	<span class="res1">char </span>cadena [<span class="res4">10</span>];
+	cin.getline (cadena, <span class="res4">10</span>);
+	 
+	<span class="res2">cout </span>&lt;&lt; strlen (cadena) &lt;&lt; endl;
+	
+	<span class="res5">//Asignar funcion a una variable</span>
+	<span class="res1">int </span>longitud = strlen (cadena);
+	
+	 </pre>
+  </div>
+</div>
+
+<div class="prograTitle" >
+  <h1>Strcpy</h1>
+</div>
+<div class="prograContent">
+  <p>Como puedes notar, todas estas funciones son extremadamente sencillas, y ahora toca ver como copiar una cadena a otra usando esta misma. Veamos la sintaxis y codificacion en C++! :<br><br>
+  Regresamo a explicar un poquito nada mas, hacemos toooodo lo anterior para leer una cadena primera, y declaramos una segunda cadena para almacenar la copia. <br><br>
+  Luego, ponemos la palabra reservada <span class="enf">strcpy</span> que nos va pedir abrir parentesis, y posteriormente, dentro del mismo, en los parametros, colocamos primero la cadena a la que se quiere pasar la informacion, una coma, y luego, la cadena a la que le queremos copiar, la informacion, imprimimos la cadena copiada, y listo! :D
+  </p>
+<div class="code">
+    <pre>
+	
+	<span class="res1">char </span>cadena [<span class="res4">10</span>], cadenaCopia [<span class="res4">10</span>];
+	cin.getline (cadena, <span class="res4">10</span>);
+	 
+	strcpy (cadenaCopia, cadena);
+	<span class="res2">cout </span>&lt;&lt; cadenaCopia &lt;&lt; endl
+	 </pre>
+  </div>
+</div>
+	
+<div class="prograTitle" >
+  <h1>Strcat</h1>
+</div>
+<div class="prograContent">
+  <p> Ya vamos terminando, como ultimo, vamos a aprender a concatenar cadenas, usando la funcion <span class="enf">strcat</span>, con la cual, vamos a poder concatenar dos elementos del tipo. Como siempre, veremos su estructura y explicaremos.<br><br>
+	  Para esto, usamos la palabra reservada <span class="enf">strcat</span> y dentro de sus parametros, esta, primero, la cadena a la que le vamos a contactenar algo, y luego, separado por una coma, la cadena que queremos concatenar.<br>
+	  Para este caso, primero contactenamos a "cadena" una espacio " ", y  posteriormente, con otro <span class="bold">strcat</span> unimos a <span class="bold">cadena</span> (a la que ya le concatenamos el espacio) la segunda cadena, y con eso, por ultimo imprimimos la cadena original con las 2 concatenaciones, con un "cout".
+  </p>
+<div class="code">
+    <pre>
+	
+	<span class="res1">char </span>cadena [<span class="res4">10</span>] = <span class="res3">"Hola"</span>;
+	<span class="res1">char </span>cadena2 [<span class="res4">10</span>] = <span class="res3">"mundo"</span>;
+	
+	strcat (cadena, <span class="res3">" "</span>);
+	strcat (cadena, cadena2);
+	 
+	<span class="res2">cout </span>&lt;&lt; cadena &lt;&lt; endl;
+	
+	 </pre>
+  </div>
+</div>
+
+<div class="prograTitle" >
+  <h1>Ejercicios Practicos</h1>
+</div>
+<div class="prograContent">
+	<p>
+	<span class="bold">-Crear un programa que lea la entrada de un nombre(completo y con espacios), y que determine que si el nombre ocupa mas de 20 caracteres, que muestre que el nombre es demasiado grande, y siga pidiendo la entrada del nombre, hasta que cumpla con la condicion, y si no, cuando se ingrese un nombre valido, pues solo lo imprime.</span>
+	</p>
+</div>
+	
+<div class="next"> 
+	<a href="arraysmat.html"><button>Anterior</button></a>
+	<a href="estruct.html"><button><strong>Siguiente</strong></button>
+  </a> </div>
+</body>
+<footer>
+  <div class="footerBack">
+    <h5><strong>C++ Manual Practico</strong>desarrollado por <strong>AllanDanielLacanVasquez ©</strong>2022</h5>
+  </div>
+</footer>
+</html>

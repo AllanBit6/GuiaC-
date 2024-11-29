@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" lang="ES">
+
+<!--Animate CSS-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!--Fuente Hubaii-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+
+<!--Fuente JDCode-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+
+<!--Fuente asap-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+
+<!--Hoja de Estilo-->
+<link href="css/style.css" rel="stylesheet">
+</head>
+<header class="animate__animated animate__fadeIn">
+  <nav><img class="navlogo" src="media/IMG-20210122-WA0004.jpg" alt="">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+	  <li><a href="es.html">E/S de Datos</a></li>
+	  <li><a href="cond.html">Condiciones</a></li>
+      <li><a href="buc.html">Bucles</a></li>
+	 <li><a href="men.html">Menus</a></li>
+      <li><a href="#"><strong>Arrays y Matrices</strong></a></li>
+      <li><a href="cad.html">Cadenas</a></li>
+	  <li><a href="estruct.html">Estruct. de datos</a></li>
+      <li><a href="#">DEV C++</a></li>
+    </ul>
+  </nav>
+  <h1 class="mainTitle">Arrays </h1>
+  <h1 class="mainTitle2">Y matrices </h1>
+
+</header>
+
+<body class="animate__animated animate__fadeIn">
+<div class="introContent">
+  <p>No te ha pasado que tienes que declarar variables de un mismo tipo a la vez, pero tienes que escribir y declarar cada variable
+      una por una? Verdad que seria genial declarar todas al mismo tiempo y sin esfuerzo? Pues para eso existen los <span class="bold">Arrays y Matrices</span><br>
+      los cuales son van a facilitar la vida a la hora de declarar variables en gran numero, asi que empecemos! 
+    </p>
+ 
+</div> 
+<div class="prograTitle" >
+  <h1>Arrays</h1>
+</div>
+<div class="prograContent">
+  <p>Los <span class="bold">Arrays</span> o arreglos de variables, son conocidos como vectores unidimensionales, los cuales pueden almacenar 
+    un gran numero de variables, siempre y cuando tengan el mismo tipo. Es como decir que vamos a tener un grupo de manzanas, en ella solo pueden
+    haber manzanas, y nada mas. Pues mas o menos asi seria una analogia para los Arrays, que pueden almacenar gran cantidad de variables del mismo tipo, estas
+     pueden ser del tipo <span class="bold">int, float, char, string, double, bool</span> y ahora vamos a pasar a ver su sintaxis en C++.<br><br>
+	<span class="bold">Linea 1:</span> Como una variable comun, ponemos el tipo de dato <span class="enf">int</span> luego el nombre del arreglo, y entre corchetes, ira la dimension
+    la cual se controla por el indice el cual es el numero, en este caso, nuestro indice sera <span class="bold">10</span>, igual, vamos a resaltar que 
+    el indice, siempre tendra un espacio de mas, ya que siempre se inicia en 0, por lo que tendremos 11 espacios en realidad.<br><br>
+
+    Como vimos, se pueden iniciar los arreglos sin asignacion de valor, pero igual, si los separamos por comas, podemos asignar cada uno al espacio que corresponde.
+    Si lo igualamos, y dentro de llaves ponemos los valores.<br><br>
+    
+    Asi mismo, podemos incluso, solo asignar el valor de un espacio de memoria de un valor array con una dimension. En este caso, acabamos de declarar 
+    <span class="enf">numero1</span> con una dimension de <span class="bold">3</span> por lo que si solo le queremos asignar valor, al indice 2
+    de nuestro arreglo, se declara <span class="enf">numero[2]</span> y se le asigna como una variable comun.
+	</p>
+<div class="code">
+    <pre>
+
+        <span class="res5">//Arreglos sin asignar</span>
+        <span class="res1">int </span>numero[<span class="res4">10</span>];
+        <span class="res1">char </span>cadena[<span class="res4">17</span>];
+        <span class="res1">float </span>decimal[<span class="res4">3</span>];
+        <span class="res1">bool </span>logico[<span class="res4">10</span>];
+
+        <span class="res5">//Arreglos con asignacion</span>
+        <span class="res1">int </span>numero1[<span class="res4">3</span>] = {<span class="res4">1</span>, <span class="res4">2</span>, <span class="res4">3</span>, <span class="res4">4</span>};
+
+        <span class="res5">//Asignar solo uno</span>
+        <span class="res1">int </span>numero1[<span class="res4">2</span>] = <span class="res4">10</span>;
+	 
+	 </pre>
+  </div>
+	
+</div>
+<div class="prograTitle">
+    <h1>Lectura/Salida de arrays por consola</h1>
+</div>
+<div class="prograContent">
+    <p>Para poder imprimir y leer vectores por consola, se puede hacer de la manera tradicional, unicamente poninendo el indice del array al que queremos 
+        acceder, en este caso, queremos imprimir la letra <span class="bold">" b "</span>, que si notamos, se encuentra en el indice 2, de nuestro arreglo 
+        de caracteres, entonces ponemos<br> <span class="enf">cout &gt;&gt;cadena[2];</span>.<br><br>
+        Para leer es exactamente lo mismo, ponemos el array, el indice que queremos leer, y con eso basta.
+    </p>
+  <div class="code">
+      <pre>
+  
+          <span class="res5">//Salida por Consola</span>
+          <span class="res1">char </span>caracteres[<span class="res4">3</span>] = {<span class="res3">'a'</span>, <span class="res3">'b'</span>, <span class="res3">'c'</span>};
+          <span class="res2">cout </span>&lt;&lt; caracteres[<span class="res4">2</span>] &lt;&lt; endl;
+     
+          <span class="res5">//Entrada por Consola</span>
+          <span class="res1">char </span>caracteres[<span class="res4">3</span>];
+          <span class="res2">cin </span>&gt;&gt; caracteres[<span class="res4">1</span>];
+       </pre>
+    </div>
+</div>
+
+<div class="prograContent"><p>
+
+	El diagrama de flujo de <span class="bold">Arrays</span> seria el siguiente:
+  </p> <div class="imgProgra"> <img src="media/arraydig.png" alt=""> </div></div>
+
+<div class="secondTitle" >
+  <h1>Ejemplo 1&nbsp;</h1>
+</div>
+<div class="prograContent">
+	<p>Tenemos que desarrollar un programa que pueda leer 3 nombres, y luego imprimirlos en pantalla. Puede apoyarse con bucles si quiere.</p>
+</div>
+<div class="prograContent">
+  <p>Esto sera sencillo, primero vamos a declarar nuestro arreglo sin asignacion de valor, en este caso <span class="enf">nombres</span> y le ponemos de indice <span class="bold">3</span> , para almacenar 3 nombres, los cuales seran de tipo cadena, y eso significa que antes debimos incluir la libreria <span class="enf">string.h</span> la cual nos permitira usar sus instrucciones, con esto, dentro de la funcion principal, vamos a imprimir un mensaje pidiendo los 3 nombres en orden, y luego leyendolos, unicamente cambiando el numero del indice del arreglo que tengamos, en este caso, usaremos 3 de 4 espacios (excluyendo el 0), y ya como ultimo, imprimimos todo, como variables normales, solo cambiando el numero del indice.
+  </p>
+  <div class="code">
+    <pre>
+	
+  <span class="res1">#include &lt;iostream.h&gt;</span>
+  <span class="res1">#include &lt;string.h&gt;</span>
+	 
+  <span class="res1">using namespace</span> std;
+	 
+  <span class="res2">int</span> main () {
+	 
+  <span class="res1">string </span>nombres[<span class="res4">3</span>];
+
+  <span class="res2">cout </span>&lt;&lt; <span class="res3">"Ingrese primer nombre"</span> &lt;&lt; endl;
+  <span class="res2">cin </span>&gt;&gt; nombres[<span class="res4">1</span>];
+  <span class="res2">cout </span>&lt;&lt; <span class="res3">"Ingrese segundo nombre"</span> &lt;&lt; endl;
+  <span class="res2">cin </span>&gt;&gt; nombres[<span class="res4">2</span>];
+  <span class="res2">cout </span>&lt;&lt; <span class="res3">"Ingrese tercer nombre"</span> &lt;&lt; endl;
+  <span class="res2">cin </span>&gt;&gt; nombres[<span class="res4">3</span>];
+	 
+  <span class="res2">cout </span>&lt;&lt; nombres[<span class="res4">1</span>] &lt;&lt; endl;
+  <span class="res2">cout </span>&lt;&lt; nombres[<span class="res4">2</span>] &lt;&lt; endl;
+  <span class="res2">cout </span>&lt;&lt; nombres[<span class="res4">3</span>] &lt;&lt; endl;
+  <span class="res1">return</span><span class="res4"> 0</span>;
+  }
+		</pre>
+  </div>
+</div>
+
+<div class="prograTitle" >
+  <h1>Matrices</h1>
+</div>
+<div class="prograContent">
+  <p>Las <span class="bold">Matrices</span> vectores bidimensionales, o vectores de vectores, son exactamente iguales a los arrays en cuanto a funcion de almacenar gran parte de informacion del mismo tipo, solo que esta vez, tendremos otra estructura, ya que con los arrays, unicamente podiamos almacenar informacion de manera lineal, pero ahora, tenemos <span class="bold">filas y columnas</span>, en donde cada uno tiene un indice, y ella, podemos tener sectores, en donde almacenar informacion.
+  Primero te mostrare un poco de la sintaxis de las matrices en C++, y posteriormente te mostrare una tabla para enteder de mejor manera como funcionan las matrices :D<br><br>
+
+No voy a explicar el codigo por lineas, porque la diferencia que tienen es minima, ya que nos damos cuenta, que solo hay que agregar un par de corchetes mas para poder convertir un arreglo a matriz <span class="enf">[ ]</span><br>
+	  Con respecto a la asignacion, podemos tenerla de dos formas, una forma seria como vimos anteriormente<br> <span class="enf">matriz [2][2] = {1, 2, 3, 4}</span> y otra forma seria separando por grupos, paraa mas orden, como se muestra en el bloque de codigo. <span class="enf">matriz [2][2] = { {1, 2}{3, 4} }</span>, igual que para asignar un valor a un solo sector, tendriamos que poner los indices de la columna y fila a la que queremos acceder, y asignarle el valor correspondiente, y listo! :)  
+	</p>
+<div class="code">
+    <pre>
+
+        <span class="res5">//Matrices sin asignar</span>
+        <span class="res1">int </span>numero[<span class="res4">10</span>][<span class="res4">7</span>];
+        <span class="res1">float </span>numero[<span class="res4">17</span>][<span class="res4">1</span>];
+
+
+        <span class="res5">//Matrices con asignacion</span>
+        <span class="res1">int </span>numero1[<span class="res4">2</span>][<span class="res4">2</span>] = {{<span class="res4">1</span>, <span class="res4">2</span>}{<span class="res4">3</span>, <span class="res4">4</span>}};
+
+        <span class="res5">//Asignar solo un sector</span>
+        <span class="res1">int </span>numero1[<span class="res4">1</span>][<span class="res4">0</span>] = <span class="res4">7</span>;
+	 
+	 </pre>
+  </div>
+</div>
+<div class="prograContent">
+  <p>Para explicar las matrices de mejor manera, te presento esta tabla, la cual tiene <span class="bold">filas y columnas</span>,bien, ahora, podemos ver esto como un tablero con cuadrantes o sectores, en donde cada numero tiene un indice dentro de la tabla para encontrarlo. Ejemplo: queremos encontrar la direccion o ubicacion del numero <span class="bold">35</span> en esta tabla. Pues primero nos dirigmos a las columnas, y vemos que cada una de ellas esta ennumerada, desde la 0 a la 10, entonces vamos a contar hasta que columna se encuentra nuestro numero, y vemos que se encuentra en la fila <span class="bold">7</span>, bien! ahora ya sabemos la columna, seguimos y nos fijamos en las filas, las cuales igualmente estan enumeradas, y con eso ya podemos buscar en que fila se encuentra nuestro numero, y vemos que se encuentra en la fila <span class="bold">5</span> asi que ahora sabemos su direccion! la cual seria <span class="bold">Fila 5, Columna 7</span> y asi funcionarian las matrices, pongamos otro ejemplo. Ahora busquemos la direccion del numero 10, la cual se encuentra en la columna 1, y la fila 10, y con eso ya ubicamos otro numero, recordemos que siempre comenzamos desde el 0, en ambos indices.</p>
+  <div class="imgProgra"> <img src="https://i.stack.imgur.com/pwjgz.png" alt=""> </div>
+</div>
+<div class="prograTitle">
+    <h1>Recorrer una matriz</h1>
+</div>
+<div class="prograContent">
+    <p>Para recorrer una matriz, vamos a necesitar de 2 variables auxiliares, las cuales van a corresponder al numero de filas y columnas respectivamente, las cuales seran <span class="bold">"i" y "j"</span>, y para esto usaremos de igual manera, ciclos anidados FOR, Y lo haremos de la siguiente manera, usando esta estructura.<br><br>
+		
+	Vamos a crear una matriz de 3 x 3 primeramente, que ya sabemos que es poniendo 3 y 3 en los corchetes de los indices respectivamente, lo cual sera una matriz entera<br><br>
+	Luego vamos a poner un bucle <span class="bold">For</span> y le inicializamos la variable " i ", justo debajo, declaramos un bucle exactamente igual, pero en lugar de declara " i " vamos a declarar " j ", y la condicion para cada uno, sera que se repita cuando el iterador sea menor a 3. Dentro de el vamos a mandar un mensaje por cada vuelta para que el usuario llene los 9 espacios de nuestra matriz con numeros que decida. Y leemos con <span class="enf">cin &lt;&lt; matriz[i][j]</span> usando de indices las variables del iterador, lo cual nos facilitara el hecho de rellenar la matriz, porque por cada vuelta, aumenta en uno, y asi pasa con el siguiente bucle.<br><br>
+		
+	Para imprimir nuestra matriz, es muy sencillo, ya que solo hay que repetir la estructura de los bucles anidados de nuevo, y esta vez, en lugar de recoger los datos, los vamos a imprimir con <span class="enf">cout &lt;&lt; matriz [i][j];</span>.
+    </p>
+</div>
+<div class="prograContent">
+	  <div class="code">
+      <pre>
+	  
+  <span class="res1">#include &lt;iostream.h&gt;</span>
+	 
+  <span class="res1">using namespace</span> std;
+	 
+  <span class="res2">int</span> main () {
+	 
+	<span class="res1">int</span> matriz [<span class="res4">3</span>][<span class="res4">3</span>];
+	 
+	 <span class="res1">for </span>(<span class="res1">int </span> i = <span class="res4">0</span>; i &lt; <span class="res4">3</span>; i++ ) { 
+	     <span class="res1">for </span>(<span class="res1">int </span> j = <span class="res4">0</span>; j &lt; <span class="res4">3</span>; j++ ) { 
+		 <span class="res2">cout </span>&lt;&lt; <span class="res3"> "Ingrese el valor fila " </span>&lt;&lt; i &lt;&lt; <span class="res3">"columna "</span> j  &lt;&lt; endl;
+		 <span class="res2">cin </span>&gt;&gt; matriz [i][j];
+	     } 
+	 }
+	 
+  	<span class="res2">cout </span>&lt;&lt; endl;
+  
+	 <span class="res1">for </span>(<span class="res1">int </span> i = <span class="res4">0</span>; i &lt; <span class="res4">3</span>; i++ ) { 
+	     <span class="res1">for </span>(<span class="res1">int </span> j = <span class="res4">0</span>; j &lt; <span class="res4">3</span>; j++ ) { 
+		 <span class="res2">cout </span>&lt;&lt; matriz [i][j] &lt;&lt; <span class="res3">" "</span> &lt;&lt; endl;
+	
+	     } 
+		 
+	     <span class="res2">cout </span>&lt;&lt; endl;
+	 } 
+	 
+  <span class="res1">return</span><span class="res4"> 0</span>;
+  }
+       </pre>
+    </div>
+	
+</div>
+	
+<div class="prograTitle" >
+  <h1>Ejercicios Practicos</h1>
+</div>
+<div class="prograContent">
+	<p>
+	<span class="bold"> -Desarrollar un programa que le pida al usuario cuantas columnas y filas va a querer en su matriz, y posteriormente, imprimir dicha matriz</span>
+	</p>
+	<p>
+	<span class="bold"> -Crear programa que declare un arreglo de 25 numeros, y luego llenarlos de numeros aleatorios. (Puede investigar sobre la funcion rand( ); y math.h para facilitarlo) asi mismo, puede apoyarse de bucles. </span>
+	</p>
+</div>
+	
+<div class="next"> 
+	<a href="buc.html"><button>Anterior</button></a>
+	<a href="cad.html"><button><strong>Siguiente</strong></button>
+  </a> </div>
+</body>
+<footer>
+  <div class="footerBack">
+    <h5><strong>C++ Manual Practico</strong>desarrollado por <strong>AllanDanielLacanVasquez ©</strong>2022</h5>
+  </div>
+</footer>
+</html>

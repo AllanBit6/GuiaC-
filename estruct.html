@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" lang="ES">
+
+<!--Animate CSS-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!--Fuente Hubaii-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+
+<!--Fuente JDCode-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+
+<!--Fuente asap-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+
+<!--Hoja de Estilo-->
+<link href="css/style.css" rel="stylesheet">
+</head>
+<header class="animate__animated animate__fadeIn">
+  <nav><img class="navlogo" src="media/IMG-20210122-WA0004.jpg" alt="">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+	  <li><a href="es.html">E/S de Datos</a></li>
+	  <li><a href="#">Condiciones</a></li>
+      <li><a href="buc.html">Bucles</a></li>
+      <li><a href="men.html">Menus</a></li>
+      <li><a href="arraysmat.html">Arrays y Matrices</a></li>
+      <li><a href="cad.html">Cadenas</a></li>
+	  <li><a href="#"><strong>Estruct. de datos</strong></a></li>
+      <li><a href="#">DEV C++</a></li>
+    </ul>
+  </nav>
+  <h1 class="mainTitle">Estructuras</h1>
+  <h1 class="mainTitle2">de datos</h1>
+
+</header>
+
+<body class="animate__animated animate__fadeIn">
+<div class="introContent">
+  <p>En la seccion pasada estuvimos estudiando los arregos y matrices, pero...sabias que podemos tener algo como una estructura de matrices? y esta vez
+      podemos almacenar arreglos y matrices de varios tipos! (int, char, string) y declararlo para varias ocasiones, por ejemplo, para almacenar datos de una persona, 
+	  de un libro, producto o algo que requiera ser declarado varias veces.<br><br>
+	Las estructuras de datos nos permiten almacenar varios tipos de arreglos para usarse en algo que podriamos llamar "Variables de estructura"
+	los cuales poseeran los mismos atributos de la estructura, y ahora, vamos a estudiar eso.<br><br></p>
+
+</div>
+<div class="prograTitle" >
+  <h1>Struct</h1>
+</div>
+<div class="prograContent">
+  <p> Bueno, las <span class="bold">Estructuras de datos</span> se pueden declarar tanto fuera de la funcion principal, como dentro. Pero igual 
+	se hacen de la misma manera. Y vamos a ver como es su sintaxis en C++. <br><br>
+	  
+	<span class="bold">Linea 1:</span>Ponemos la palabra reservada <span class="enf">struct</span> y seguido, le asignamos un nombre a nuestra 
+	estructura, y abrimos parentesis.<br><br>
+	<span class="bold">Linea 2 a 7:</span> En esta parte, declararemos tooodas las variables que creamos necesarias para nuestra estructura, 
+	en este caso, solo declaramos 3.<br><br>
+	<span class="bold">Linea 8:</span> Cerramos las llaves, y seguido, podemos declarar nuestras variables de tipo estructura, en este caso, tenemos 2, 
+	y al final, cerramos con un punto y coma, como siempre.<br><br></p>
+<div class="code">
+    <pre>
+	 
+	 <span class="res1">struct </span> estructura {
+	 
+	    <span class="res1">char </span> name [<span class="res4">30</span>];
+	    <span class="res1">int </span> num;
+	    <span class="res1">float </span> cent;
+		
+	 } variableStruct, variableStruct2;
+	 
+	 <span class="res5">//Resto del codigo</span>
+	 
+	 </pre>
+  </div>
+	
+
+</div>
+
+<div class="prograTitle" >
+  <h1>Acceder a un atributo&nbsp;</h1>
+</div>
+<div class="prograContent">
+  <p> Todo bien, pero ahora, como podemos acceder a una variable de nuestra variable estructura? Por si quisieramos imprimirla o leer datos sobre ella? 
+	  Pues es sencillo, ya que unicamente necesitamos escribir el nombre de nuestra variable estructura, un punto, y luego la variable a la que queremos
+	   acceder <span class="enf">variableStruct.variable</span> y ahora veremos su sintaxis en C++.<br><br>
+	  
+	  Tanto para leer e imprimir es lo mismo, podemos acceder a cualquier variable que queramos.</p>
+<div class="code">
+    <pre>
+	 
+	<span class="res1">struct </span> estructura { 
+	 
+	    <span class="res1">char </span> name [<span class="res4">30</span>];
+	    <span class="res1">int </span> num;
+	    <span class="res1">float </span> cent;
+		
+	 } variableStruct;
+
+	 <span class="res5"> /*Acceder a la variable 
+	 de nuestra variable Struct*/ </span>
+	 <span class="res2">cin </span>&gt;&gt; variableStruct.name;
+	 <span class="res5">//Imprimir de la misma forma</span>
+	 <span class="res2">cout </span>&lt;&lt; variableStruct.name &lt;&lt; endl;
+	 
+	 </pre>
+  </div>
+</div>
+<div class="secondTitle" >
+  <h1>Ejemplo 1&nbsp;</h1>
+</div>
+<div class="prograContent">
+	<p>Escribir un programa que lea algunos atributos de 2 libros, como titulo, autor, unidades y precio, y luego los muestre en pantalla.</p>
+</div>
+<div class="prograContent">
+  <p>
+ Bueno, pues declaramos nuestra funcion principal y todo nuestro esqueleto en general, para despues, declarar una estructura a la que llamaremos 
+ <span class="bold">libros</span>, y dentro de ella, declaramos unas variables y arreglos, los cuales corresponderan a <span class="bold">titulo, autor, unid, y precio</span>
+ , a las cadenas les asignamos un indice de "30" por si acaso, y por ultimo declaramos nuestras dos variables de estructura para 2 libros.<br><br>
+ Ya dentro, con un <span class="enf">cin.getline</span> leemos las cadenas, y con <span class="enf">cin</span> leemos las cantidades, accediendo con un punto a 
+ cada una de ellas, y repetimos para el libro 2.<br><br>
+ Ya por ultimo, imprimimos todo de la manera tradicional, y con esto ya usamos estructuras para recoger datos de 2 libros.
+  </p>
+  <div class="code">
+    <pre>
+
+ <span class="res1">#include &lt;iostream.h&gt;</span>
+	 
+ <span class="res1">using namespace</span> std;
+ 		   
+ <span class="res2">int</span> main () {		
+
+	<span class="res1">struct </span>libros {
+	 
+	<span class="res1">char </span> titulo [<span class="res4">30</span>];
+	<span class="res1">char </span> autor [<span class="res4">30</span>];
+	<span class="res1">int </span> unid;
+	<span class="res1">float </span> precio;
+		
+	 } libro1, libro2;
+
+	 <span class="res5">//Leer los datos</span>
+
+	 cin.getline(libro1.titulo, <span class="res4">30</span>);
+	 cin.getline(libro2.titulo, <span class="res4">30</span>);
+
+	 cin.getline(libro1.autor, <span class="res4">30</span>);
+	 cin.getline(libro2.autor, <span class="res4">30</span>);
+
+	 <span class="res2">cin </span>&gt;&gt;libro1.unid;
+	 <span class="res2">cin </span>&gt;&gt;libro2.unid;
+
+	 <span class="res2">cin </span>&gt;&gt;libro1.precio;
+	 <span class="res2">cin </span>&gt;&gt;libro2.precio;	
+
+	 <span class="res5">//Imprimir los datos</span>
+
+	 <span class="res2">cout </span>&lt;&lt; libro1.titulo &lt;&lt; endl;
+	 <span class="res2">cout </span>&lt;&lt; libro1.autor &lt;&lt; endl;
+	 <span class="res2">cout </span>&lt;&lt; libro1.unid &lt;&lt; endl;	
+	 <span class="res2">cout </span>&lt;&lt; libro1.precio &lt;&lt; endl;
+	 
+	 <span class="res2">cout </span>&lt;&lt; libro2.titulo &lt;&lt; endl;
+	 <span class="res2">cout </span>&lt;&lt; libro2.autor &lt;&lt; endl;
+	 <span class="res2">cout </span>&lt;&lt; libro2.unid &lt;&lt; endl;	
+	 <span class="res2">cout </span>&lt;&lt; libro2.precio &lt;&lt; endl;
+
+
+	 <span class="res1">return</span><span class="res4"> 0</span>;
+	}
+	</pre>
+  </div>
+</div>
+
+
+<div class="prograTitle" >
+  <h1>Ejercicios Practicos</h1>
+</div>
+<div class="prograContent">
+	<p>
+	<span class="bold">-Escribe un programa que lea la entrada de 5 personas, los cuales tendran los atributos de nombre, edad, punteo, y grado, luego mostrarlo en pantalla.</span>
+	</p>
+	
+</div>
+	
+<div class="next"> 
+	<a href="cad.html"><button>Anterior</button></a>
+	<a href="#"><button><strong>Siguiente</strong></button>
+  </a> </div>
+</body>
+<footer>
+  <div class="footerBack">
+    <h5><strong>C++ Manual Practico</strong>desarrollado por <strong>AllanDanielLacanVasquez ©</strong>2022</h5>
+  </div>
+</footer>
+</html>
